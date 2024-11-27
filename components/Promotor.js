@@ -27,6 +27,10 @@ const shows = [
 	},
 	{
 		id: 6,
+		image: "/images/promotor/5.svg",
+	},
+	{
+		id: 6,
 		image: "/images/promotor/2.svg",
 	},
 	{
@@ -35,27 +39,27 @@ const shows = [
 	},
 	{
 		id: 8,
-		image: "/images/promotor/2.svg",
+		image: "/images/promotor/8.svg",
 	},
 	{
 		id: 9,
-		image: "/images/promotor/2.svg",
+		image: "/images/promotor/9.svg",
 	},
 	{
 		id: 10,
-		image: "/images/promotor/2.svg",
+		image: "/images/promotor/10.svg",
 	},
 	{
 		id: 11,
-		image: "/images/promotor/2.svg",
+		image: "/images/promotor/11.svg",
 	},
 	{
 		id: 12,
-		image: "/images/promotor/2.svg",
+		image: "/images/promotor/12.svg",
 	},
 	{
 		id: 13,
-		image: "/images/promotor/2.svg",
+		image: "/images/promotor/13.svg",
 	},
 ];
 
