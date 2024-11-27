@@ -28,7 +28,7 @@ const shows = [
 	},
 	{
 		id: 3,
-		image: "/images/popular-show/the-phantom-menace.png",
+		image: "/images/popular-show/cervezas.png",
 		badge: "03",
 		title: "EXPOCERVEZAS",
 		rating: "Octubre 10",
@@ -38,7 +38,7 @@ const shows = [
 	},
 	{
 		id: 4,
-		image: "/images/popular-show/the-shadow.png",
+		image: "/images/popular-show/aurora.png",
 		badge: "04",
 		title: "AURORA",
 		rating: "Noviembre 6",
@@ -48,7 +48,7 @@ const shows = [
 	},
 	{
 		id: 5,
-		image: "/images/popular-show/paramo-presenta.png",
+		image: "/images/popular-show/paramo.png",
 		badge: "05",
 		title: "PÁRAMO CELEBRA",
 		rating: "8.8",
@@ -78,7 +78,7 @@ const shows = [
 	},
 	{
 		id: 8,
-		image: "/images/popular-show/the-phantom-menace.png",
+		image: "/images/popular-show/cervezas.png",
 		badge: "03",
 		title: "EXPOCERVEZAS",
 		rating: "Octubre 10",
@@ -88,7 +88,7 @@ const shows = [
 	},
 	{
 		id: 9,
-		image: "/images/popular-show/the-shadow.png",
+		image: "/images/popular-show/aurora.png",
 		badge: "04",
 		title: "AURORA",
 		rating: "Noviembre 6",
@@ -98,7 +98,7 @@ const shows = [
 	},
 	{
 		id: 10,
-		image: "/images/popular-show/paramo-presenta.png",
+		image: "/images/popular-show/paramo.png",
 		badge: "05",
 		title: "PÁRAMO CELEBRA",
 		rating: "8.8",
