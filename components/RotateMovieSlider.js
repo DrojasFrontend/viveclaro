@@ -21,7 +21,7 @@ const movies = [
 	},
 	{
 		id: 2,
-		image: "/images/foro.jpg",
+		image: "/images/foro-2.webp",
 		title: "ARENA",
 		rating: "Octubre 10 al 13",
 		duration: "6PM - 10PM",
@@ -35,7 +35,7 @@ const movies = [
 	},
 	{
 		id: 3,
-		image: "/images/foro.jpg",
+		image: "/images/foro-3.webp",
 		title: "ZONAS VERDES",
 		rating: "Noviembre 6",
 		duration: "6PM - 10PM",
@@ -50,8 +50,8 @@ const movies = [
 	{
 		id: 4,
 		image: "/images/foro.jpg",
-		title: "FOROS",
-		rating: "Noviembre 6",
+		title: "FORO",
+		rating: "Mayo 16",
 		duration: "6PM - 10PM",
 		quality: "4k Quality",
 		description: "Descubre un espacio diseñado para envolverte en la magia de la música y el show. Con una estructura de graderías temporales y modulares que se adaptan a cada evento, este foro garantiza una conexión única con tus artistas favoritos.",
@@ -63,9 +63,9 @@ const movies = [
 	},
 	{
 		id: 5,
-		image: "/images/foro.jpg",
+		image: "/images/foro-2.webp",
 		title: "ARENA",
-		rating: "Noviembre 6",
+		rating: "Octubre 10 al 13",
 		duration: "6PM - 10PM",
 		quality: "4k Quality",
 		description: "Si buscas un lugar donde la grandeza y la espectacularidad cobran vida, este es el sitio. Nuestra carpa central transforma cada evento en una experiencia memorable, alojando espectáculos circenses, exhibiciones de gran formato y eventos de alto impacto.",
@@ -77,7 +77,7 @@ const movies = [
 	},
 	{
 		id: 6,
-		image: "/images/foro.jpg",
+		image: "/images/foro-3.webp",
 		title: "ZONAS VERDES",
 		rating: "Noviembre 6",
 		duration: "6PM - 10PM",
@@ -134,7 +134,7 @@ const RotateMovieSlider = () => {
 				touchRatio={1.5}
 				watchSlidesProgress={true}
 				autoplay={{
-					delay: 10000,
+					delay: 10000000,
 					disableOnInteraction: false,
 					pauseOnMouseEnter: true,
 				}}
@@ -179,7 +179,7 @@ const RotateMovieSlider = () => {
 							/>
 						</div>
 
-						<div className="content position-absolute start-0 bottom-0 w-100 text-center">
+						<div className="content position-absolute start-0 bottom-0 w-100 text-center z-1">
 							<h3 className="card-title text-uppercase lh-1">
 								<Link href="#" className="gradient-link">
 									{movie.title}

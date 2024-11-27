@@ -3114,7 +3114,7 @@ button.hl-btn:active span {
 	backdrop-filter: blur(50px);
 	border-radius: 40px;
 	padding: 20px;
-	margin-bottom: -100%;
+	/* margin-bottom: -100%; */
 	transition: margin 500ms;
 }
 .movie-card-small .details .movie-name,
@@ -3787,12 +3787,13 @@ button.hl-btn:active span {
 	border-radius: 30px;
 	background: linear-gradient(
 		180deg,
-		rgb(31 31 31 / 0%) 0%,
-		rgb(14 14 14 / 0%) 63.5%,
+		rgb(31 31 31 / 20%) 0%,
+		rgba(14, 14, 14, 0.20) 63.5%,
 		#0909098f 100%
 	);
 	mix-blend-mode: multiply;
 	transition: all 1000ms ease;
+	z-index: 1;
 }
 .rotate-movie-card .content {
 	margin-bottom: 40px;
@@ -9959,7 +9960,7 @@ body.rtl {
 
 .gallery {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	border: 1px solid #000;
 	margin-bottom: 0;
 }
@@ -9981,33 +9982,42 @@ body.rtl {
 
 .gallery .gallery-img:nth-child(1),
 .gallery .gallery-img:nth-child(2),
-.gallery .gallery-img:nth-child(3) {
-	border-right: 1px solid #000;
-}
-
-.gallery .gallery-img:nth-child(5) {
-	grid-column: 4 span;
-}
-
-.gallery .gallery-img:nth-child(6),
-.gallery .gallery-img:nth-child(7) {
+.gallery .gallery-img:nth-child(3),
+.gallery .gallery-img:nth-child(4){
 	grid-column: 2 span;
 }
 
+.gallery .gallery-img:nth-child(5),
 .gallery .gallery-img:nth-child(6) {
-	border-right: 1px solid #000;
+	grid-column: 8 span;
 }
 
-.gallery .gallery-img:nth-child(8),
-.gallery .gallery-img:nth-child(9),
-.gallery .gallery-img:nth-child(10) {
-	border-right: 1px solid #000;
-}
-
-.gallery .gallery-img:nth-child(12) {
+.gallery .gallery-img:nth-child(7),
+.gallery .gallery-img:nth-child(8)  {
 	grid-column: 4 span;
-	border-bottom: 0;
 }
+
+.gallery .gallery-img:nth-child(9) {
+	grid-column: 2 span;
+}
+
+.gallery .gallery-img:nth-child(10),
+.gallery .gallery-img:nth-child(12){
+	grid-column: 1 span;
+}
+
+.gallery .gallery-img:nth-child(13) {
+	grid-column: 2 span;
+}
+
+.gallery .gallery-img:nth-child(11) {
+	grid-column: 2 span;
+}
+
+.image-wrapper img {
+	width: 100%;
+}
+
 
 .custom-button {
 	display: flex;
@@ -10179,7 +10189,11 @@ body.rtl {
 }
 
 .movie-card-small .gradient-link {
-	color: #510000;
+	color: #fff;
+}
+
+.design-area .movie-card-small .gradient-link {
+	color: #000;
 }
 
 .header-area {

@@ -7,51 +7,55 @@ import Link from "next/link";
 const shows = [
 	{
 		id: 1,
-		image: "/images/promotor/bavaria.webp",
+		image: "/images/promotor/2.svg",
 	},
 	{
 		id: 2,
-		image: "/images/promotor/samsung.webp",
+		image: "/images/promotor/2.svg",
 	},
 	{
 		id: 3,
-		image: "/images/promotor/tecno.webp",
+		image: "/images/promotor/2.svg",
 	},
 	{
 		id: 4,
-		image: "/images/promotor/xiaomi.webp",
+		image: "/images/promotor/2.svg",
 	},
 	{
 		id: 5,
-		image: "/images/promotor/zte.webp",
+		text: "APOYAN",
 	},
 	{
 		id: 6,
-		image: "/images/promotor/bavaria.webp",
+		image: "/images/promotor/2.svg",
 	},
 	{
 		id: 7,
-		image: "/images/promotor/samsung.webp",
+		image: "/images/promotor/2.svg",
 	},
 	{
 		id: 8,
-		image: "/images/promotor/tecno.webp",
+		image: "/images/promotor/2.svg",
 	},
 	{
 		id: 9,
-		image: "/images/promotor/xiaomi.webp",
+		image: "/images/promotor/2.svg",
 	},
 	{
 		id: 10,
-		image: "/images/promotor/zte.webp",
+		image: "/images/promotor/2.svg",
 	},
 	{
 		id: 11,
-		image: "/images/promotor/bavaria.webp",
+		image: "/images/promotor/2.svg",
 	},
 	{
 		id: 12,
-		image: "/images/promotor/samsung.webp",
+		image: "/images/promotor/2.svg",
+	},
+	{
+		id: 13,
+		image: "/images/promotor/2.svg",
 	},
 ];
 
@@ -59,27 +63,27 @@ const Promotor = () => {
 	const [images, setImages] = useState(shows);
 	const [fade, setFade] = useState(false);
 
-	const shuffleArray = (array) => {
-		const newArray = [...array];
-		for (let i = newArray.length - 1; i > 0; i--) {
-			const j = Math.floor(Math.random() * (i + 1));
-			[newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-		}
-		return newArray;
-	};
+	// const shuffleArray = (array) => {
+	// 	const newArray = [...array];
+	// 	for (let i = newArray.length - 1; i > 0; i--) {
+	// 		const j = Math.floor(Math.random() * (i + 1));
+	// 		[newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+	// 	}
+	// 	return newArray;
+	// };
 
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setFade(true);
+	// useEffect(() => {
+	// 	const interval = setInterval(() => {
+	// 		setFade(true);
 
-			setTimeout(() => {
-				setImages((prevImages) => shuffleArray([...prevImages]));
-				setFade(false);
-			}, 100);
-		}, 1000);
+	// 		setTimeout(() => {
+	// 			setImages((prevImages) => shuffleArray([...prevImages]));
+	// 			setFade(false);
+	// 		}, 100);
+	// 	}, 1000);
 
-		return () => clearInterval(interval);
-	}, []);
+	// 	return () => clearInterval(interval);
+	// }, []);
 
 	return (
 		<div className="promotor-area pt-80">
@@ -98,17 +102,21 @@ const Promotor = () => {
 					<div className="gallery">
 						{images.map((show, index) => (
 							<div key={`${show.id}-${index}`} className="gallery-img">
-								<div className={`image-wrapper ${fade ? "fade" : ""}`}>
-									<Image
-										src={show.image}
-										alt=""
-										width={230}
-										height={80}
-										quality={75}
-										style={{
-											objectFit: "contain",
-										}}
-									/>
+								{/* <div className={`image-wrapper ${fade ? "fade" : ""}`}> */}
+								<div className="image-wrapper">
+									{show.image && (
+										<Image
+											src={show.image}
+											alt=""
+											width={230}
+											height={80}
+											quality={75}
+											style={{
+												objectFit: "contain",
+											}}
+										/>
+									)}
+									{!show.image && <h3 className="color-black">{show.text}</h3>}
 								</div>
 							</div>
 						))}

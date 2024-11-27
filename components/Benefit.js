@@ -8,7 +8,7 @@ const categories = [
 	{
 		id: 1,
 		image: "/images/clients/preventa.svg",
-		title: "Preventa de boleterias",
+		title: "Preventa de boletería",
 	},
 	{
 		id: 2,
@@ -18,42 +18,42 @@ const categories = [
 	{
 		id: 3,
 		image: "/images/clients/fila-rapida.svg",
-		title: "Fila rapida",
+		title: "⁠Fila rápida",
 	},
 	{
 		id: 4,
 		image: "/images/clients/vip.svg",
-		title: "Zona VIP",
+		title: "⁠Zonas VIP",
 	},
 	{
 		id: 5,
 		image: "/images/clients/beneficio.svg",
-		title: "Beneficios en alimentos y bebidas",
+		title: "⁠Beneficios en alimentos y bebidas",
 	},
 	{
-		id: 1,
+		id: 6,
 		image: "/images/clients/preventa.svg",
-		title: "Preventa de boleterias",
+		title: "Preventa de boletería",
 	},
 	{
-		id: 2,
+		id: 7,
 		image: "/images/clients/parqueadero.svg",
 		title: "Parqueadero preferente",
 	},
 	{
-		id: 3,
+		id: 8,
 		image: "/images/clients/fila-rapida.svg",
-		title: "Fila rapida",
+		title: "⁠Fila rápida",
 	},
 	{
-		id: 4,
+		id: 9,
 		image: "/images/clients/vip.svg",
-		title: "Zona VIP",
+		title: "⁠Zonas VIP",
 	},
 	{
-		id: 5,
+		id: 10,
 		image: "/images/clients/beneficio.svg",
-		title: "Beneficios en alimentos y bebidas",
+		title: "⁠Beneficios en alimentos y bebidas",
 	},
 ];
 

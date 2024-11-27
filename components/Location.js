@@ -113,14 +113,14 @@ const Location = () => {
 				<div className="center-title">
 					<div className="d-block justify-content-start mb-40">
 						<h3 className="section-title small mb-20 lh-1 bckg-586d16 color-black">
-							!Aquí se encuentra vive claro!
+							!Aquí se encuentra vive claro¡
 						</h3>
 					</div>
 				</div>
 			</div>
 			<div className="section-bckg">
 				<div className="row">
-					<div className="col-xl-4 col-lg-4">
+					<div className="col-xl-5 col-lg-5">
 						<div className="section-headeng position-relative mt-80">
 							<Image
 								src="/images/logotipo-viveclaro-white.png"
@@ -210,7 +210,20 @@ const Location = () => {
 							</div>
 						</div>
 					</div>
-					<div className="col-xl-8 col-lg-8 col-md-12 overflow-hidden">
+					<div className="position-relative col-xl-7 col-lg-7 col-md-12 overflow-hidden border-radius-50">
+						<Image
+							src="/images/location/fase-1.png"
+							alt=""
+							width={500}
+							height={600}
+							style={{
+								objectFit: "cover",
+								objectPosition: "center",
+							}}
+							className="w-100 flow-hidden border-radius-50"
+						/>
+					</div>
+					{/* <div className="col-xl-8 col-lg-8 col-md-12 overflow-hidden">
 						<div className="swiper swiper-3d-slider">
 							<div className="swiper-container">
 								<div className="swiper-wrapper">
@@ -315,7 +328,7 @@ const Location = () => {
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>

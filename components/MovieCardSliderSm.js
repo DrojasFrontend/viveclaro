@@ -18,36 +18,46 @@ const shows = [
 	},
 	{
 		id: 2,
-		image: "/images/popular-show/the-phantom-menace.png",
+		image: "/images/popular-show/circo-del-sol.png",
 		badge: "02",
-		title: "The Phantom Menace",
+		title: "Coca-Cola Food Fest",
+		rating: "Septiembre 21",
+		duration: "6PM - 10PM",
+		quality: "8k Quality",
+		genres: ["Family", "Comedy", "Drama"],
+	},
+	{
+		id: 3,
+		image: "/images/popular-show/the-phantom-menace.png",
+		badge: "03",
+		title: "EXPOCERVEZAS",
 		rating: "Octubre 10",
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
 		genres: ["Action", "Comedy", "Crime"],
 	},
 	{
-		id: 3,
+		id: 4,
 		image: "/images/popular-show/the-shadow.png",
-		badge: "03",
-		title: "The Shadow",
+		badge: "04",
+		title: "AURORA",
 		rating: "Noviembre 6",
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
 		genres: ["Family", "Comedy", "Drama"],
 	},
 	{
-		id: 4,
+		id: 5,
 		image: "/images/popular-show/paramo-presenta.png",
-		badge: "04",
-		title: "PÁRAMO PRESENTA",
+		badge: "05",
+		title: "PÁRAMO CELEBRA",
 		rating: "8.8",
 		duration: "6PM - 10PM",
 		rating: "Noviembre 16",
 		genres: ["Action", "Comedy", "Crime"],
 	},
 	{
-		id: 5,
+		id: 6,
 		image: "/images/popular-show/circo-del-sol.png",
 		badge: "01",
 		title: "CIRCO DEL SOL",
@@ -57,30 +67,40 @@ const shows = [
 		genres: ["Family", "Comedy", "Drama"],
 	},
 	{
-		id: 6,
-		image: "/images/popular-show/the-phantom-menace.png",
-		badge: "02",
-		title: "The Phantom Menace",
-		rating: "Octubre 10",
-		duration: "6PM - 10PM",
-		quality: "8k Quality",
-		genres: ["Action", "Comedy", "Crime"],
-	},
-	{
 		id: 7,
-		image: "/images/popular-show/the-shadow.png",
-		badge: "03",
-		title: "The Shadow",
-		rating: "Noviembre 6",
+		image: "/images/popular-show/circo-del-sol.png",
+		badge: "02",
+		title: "Coca-Cola Food Fest",
+		rating: "Septiembre 21",
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
 		genres: ["Family", "Comedy", "Drama"],
 	},
 	{
 		id: 8,
-		image: "/images/popular-show/paramo-presenta.png",
+		image: "/images/popular-show/the-phantom-menace.png",
+		badge: "03",
+		title: "EXPOCERVEZAS",
+		rating: "Octubre 10",
+		duration: "6PM - 10PM",
+		quality: "8k Quality",
+		genres: ["Action", "Comedy", "Crime"],
+	},
+	{
+		id: 9,
+		image: "/images/popular-show/the-shadow.png",
 		badge: "04",
-		title: "PÁRAMO PRESENTA",
+		title: "AURORA",
+		rating: "Noviembre 6",
+		duration: "6PM - 10PM",
+		quality: "8k Quality",
+		genres: ["Family", "Comedy", "Drama"],
+	},
+	{
+		id: 10,
+		image: "/images/popular-show/paramo-presenta.png",
+		badge: "05",
+		title: "PÁRAMO CELEBRA",
 		rating: "8.8",
 		duration: "6PM - 10PM",
 		rating: "Noviembre 16",
@@ -195,7 +215,7 @@ const MovieCardSliderSm = () => {
 								<div className="movie-badge position-absolute">
 									<span>{show.badge}</span>
 								</div>
-								<a
+								{/* <a
 									href="/video/video.mp4"
 									className="video-play-btn popup_video position-absolute"
 								>
@@ -211,27 +231,27 @@ const MovieCardSliderSm = () => {
 											fill="currentColor"
 										/>
 									</svg>
-								</a>
+								</a> */}
 								<div className="details position-absolute text-center">
 									<h4 className="movie-name text-uppercase fw-normal">
 										<Link
 											href="/movie-details"
-											className="gradient-link fw-normal"
+											className="gradient-link fw-normal color-black"
 										>
 											{show.title}
 										</Link>
 									</h4>
 									<ul className="movie-info">
 										<li>
-											<Image
+											{/* <Image
 												src="/images/icons/card/star-stroke.svg"
 												alt="star"
 												width={16}
 												height={16}
-											/>
-											<span>{show.rating}</span>
+											/> */}
+											<span className="color-black">{show.rating}</span>
 										</li>
-										<li>
+										{/* <li>
 											<Image
 												src="/images/icons/card/clock-stroke.svg"
 												alt="clock"
@@ -239,7 +259,7 @@ const MovieCardSliderSm = () => {
 												height={16}
 											/>
 											<span>{show.duration}</span>
-										</li>
+										</li> */}
 										{/* <li>
 										<Image
 											src="/images/icons/card/4k-stroke.svg"

@@ -95,10 +95,24 @@ const NewestReleases = () => {
 					<div className="position-relative container z-1">
 						<div className="d-block justify-content-start">
 							<h2 className="section-title large mb-20 lh-1 text-center">
-								CONOCE LA PROPUESTA DE DISEÑO <br/> PAISAJÍSTICO DE VIVE CLARO
+								CONOCE LA PROPUESTA DE DISEÑO <br /> PAISAJÍSTICO DE VIVE CLARO
 							</h2>
 							<p className="responsive--description fw-medium mb-4 col-md-10 color-white text-center m-auto">
-							El diseño diseño paisajístico de Vive Claro <strong>busca consolidar un entorno natural que fomente la diversidad vegetal y la integración de la fauna urbana</strong>. Mediante la incorporación de <strong>herbáceas, arbustos y árboles</strong>, crearemos espacios visualmente atractivos que, además de <strong>embellecer el paisaje, ofrecen refugio y alimentación a la fauna</strong>, permitiendo su libre movilidad a lo largo del área. Este enfoque busca armonizar la naturaleza con el entorno urbano, creando un espacio sostenible y lleno de vida.
+								El diseño diseño paisajístico de Vive Claro{" "}
+								<strong>
+									busca consolidar un entorno natural que fomente la diversidad
+									vegetal y la integración de la fauna urbana
+								</strong>
+								. Mediante la incorporación de{" "}
+								<strong>herbáceas, arbustos y árboles</strong>, crearemos
+								espacios visualmente atractivos que, además de{" "}
+								<strong>
+									embellecer el paisaje, ofrecen refugio y alimentación a la
+									fauna
+								</strong>
+								, permitiendo su libre movilidad a lo largo del área. Este
+								enfoque busca armonizar la naturaleza con el entorno urbano,
+								creando un espacio sostenible y lleno de vida.
 							</p>
 						</div>
 					</div>
@@ -107,8 +121,60 @@ const NewestReleases = () => {
             <button className="slider-btn next-slide slider-btn--sm newest-release-next-slide"></button>
           </div> */}
 				</div>
+				<div className="pt-80">
+					<div className="hl-container">
+						<div className="row pb-80">
+							{movies.map((movie, index) => (
+								<div
+									className="movie-card-small position-relative style-three col-md-3"
+									onClick={() => openModal(movie, index)}
+									style={{ cursor: "pointer" }}
+								>
+									<div className="thumb">
+										<Image
+											src={movie.image}
+											alt={movie.title}
+											width={1000}
+											height={300}
+										/>
+									</div>
 
-				<Swiper
+									<div className="details details-two position-absolute">
+										<h4 className="movie-name text-uppercase">
+											<span className="gradient-link color-black">
+												{movie.title}
+											</span>
+										</h4>
+									</div>
+
+									{/* <div className="options">
+										{[
+											{ icon: "add-playlist", alt: "playlist" },
+											{ icon: "casting", alt: "casting" },
+											{ icon: "add-favourite", alt: "favourite" },
+											{ icon: "share", alt: "share" },
+										].map((option, index) => (
+											<button
+												key={index}
+												className={`option-btn options--${index + 1}`}
+												onClick={(e) => e.stopPropagation()}
+											>
+												<Image
+													src={`/images/icons/card/${option.icon}.svg`}
+													alt={option.alt}
+													width={24}
+													height={24}
+												/>
+											</button>
+										))}
+									</div> */}
+								</div>
+							))}
+						</div>
+					</div>
+				</div>
+
+				{/* <Swiper
 					modules={[Navigation]}
 					navigation={{
 						prevEl: ".newest-release-prev-slide",
@@ -172,7 +238,7 @@ const NewestReleases = () => {
 							</div>
 						</SwiperSlide>
 					))}
-				</Swiper>
+				</Swiper> */}
 			</div>
 
 			{/* Modal */}

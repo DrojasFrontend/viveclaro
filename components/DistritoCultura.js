@@ -18,9 +18,9 @@ const shows = [
 	},
 	{
 		id: 2,
-		image: "/images/distrito-cultura/eventos-deportivos.png",
+		image: "/images/popular-show/festivales.jpg",
 		badge: "02",
-		title: "Eventos deportivos",
+		title: "Festivales",
 		rating: "Octubre 10",
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
@@ -28,9 +28,9 @@ const shows = [
 	},
 	{
 		id: 3,
-		image: "/images/popular-show/the-shadow.png",
+		image: "/images/popular-show/arte.webp",
 		badge: "03",
-		title: "The Shadow",
+		title: "Exposiciones de arte",
 		rating: "Noviembre 6",
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
@@ -38,9 +38,9 @@ const shows = [
 	},
 	{
 		id: 4,
-		image: "/images/popular-show/paramo-presenta.png",
+		image: "/images/popular-show/gastronomia.webp",
 		badge: "04",
-		title: "PÁRAMO PRESENTA",
+		title: "Ferias culturales & gastronómicas",
 		rating: "8.8",
 		duration: "6PM - 10PM",
 		rating: "Noviembre 16",
@@ -48,9 +48,9 @@ const shows = [
 	},
 	{
 		id: 5,
-		image: "/images/popular-show/circo-del-sol.png",
-		badge: "01",
-		title: "CIRCO DEL SOL",
+		image: "/images/popular-show/deportivos.png",
+		badge: "05",
+		title: "Eventos deportivos",
 		rating: "Mayo 16",
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
@@ -58,9 +58,9 @@ const shows = [
 	},
 	{
 		id: 6,
-		image: "/images/popular-show/the-phantom-menace.png",
-		badge: "02",
-		title: "The Phantom Menace",
+		image: "/images/popular-show/teatro.webp",
+		badge: "06",
+		title: "Teatro",
 		rating: "Octubre 10",
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
@@ -68,23 +68,13 @@ const shows = [
 	},
 	{
 		id: 7,
-		image: "/images/popular-show/the-shadow.png",
-		badge: "03",
-		title: "The Shadow",
+		image: "/images/popular-show/musicales.webp",
+		badge: "07",
+		title: "Musicales",
 		rating: "Noviembre 6",
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
 		genres: ["Family", "Comedy", "Drama"],
-	},
-	{
-		id: 8,
-		image: "/images/popular-show/paramo-presenta.png",
-		badge: "04",
-		title: "PÁRAMO PRESENTA",
-		rating: "8.8",
-		duration: "6PM - 10PM",
-		rating: "Noviembre 16",
-		genres: ["Action", "Comedy", "Crime"],
 	},
 ];
 
@@ -114,7 +104,7 @@ const MovieCardSliderSm = () => {
 					<p className="responsive--description fw-medium mb-4 col-md-8 color-white">
 						Disfruta en familia y con amigos de espacios únicos, tanto cubiertos
 						como al aire libre, en múltiples formatos, diseñados para que vivas
-						los eventos culturales y de entretenimiento más
+						los eventos culturales y de entretenimiento más impactantes.
 					</p>
 				</div>
 			</div>
@@ -189,7 +179,7 @@ const MovieCardSliderSm = () => {
 								<div className="movie-badge position-absolute">
 									<span>{show.badge}</span>
 								</div>
-								<a
+								{/* <a
 									href="/video/video.mp4"
 									className="video-play-btn popup_video position-absolute"
 								>
@@ -205,7 +195,7 @@ const MovieCardSliderSm = () => {
 											fill="currentColor"
 										/>
 									</svg>
-								</a>
+								</a> */}
 								<div className="details position-absolute text-center">
 									<h4 className="movie-name text-uppercase fw-normal">
 										<Link
@@ -216,7 +206,7 @@ const MovieCardSliderSm = () => {
 										</Link>
 									</h4>
 									<ul className="movie-info">
-										<li>
+										{/* <li>
 											<Image
 												src="/images/icons/card/star-stroke.svg"
 												alt="star"
@@ -233,7 +223,7 @@ const MovieCardSliderSm = () => {
 												height={16}
 											/>
 											<span className="color-white">{show.duration}</span>
-										</li>
+										</li> */}
 										{/* <li>
 										<Image
 											src="/images/icons/card/4k-stroke.svg"

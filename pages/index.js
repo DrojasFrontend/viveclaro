@@ -84,21 +84,24 @@ export default function Home() {
 				</div>
 			</header>
 			<div className="visibleMobile">
-				<div className="visibleMobile-logo">  
+				<div className="visibleMobile-logo">
 					<Image
 						src="/images/logotipo-viveclaro-red.webp"
 						alt="logo"
 						width={200}
 						height={56}
 					/>
-					<p>Estamos trabajando para llevarte toda la magia de nuestro espacio verde multipropósito a la palma de tu mano.</p>
+					<p>
+						Estamos trabajando para llevarte toda la magia de nuestro espacio
+						verde multipropósito a la palma de tu mano.
+					</p>
 				</div>
 			</div>
 			<div
 				className={`visibleDesktop ${geistSans.variable} ${geistMono.variable}`}
 			>
 				<main>
-					<LoadingCounter />
+					{/* <LoadingCounter /> */}
 					<ImageSequence />
 					<MovieCardSliderSm />
 					<DistritoCultura />
@@ -131,7 +134,7 @@ export default function Home() {
 									<button className="custom-button">Suscríbete</button>
 								</form>
 							</div>
-							<div className="d-flex align-items-center justify-content-center">
+							<div className="d-flex align-items-center justify-content-center flex-column">
 								<Link
 									href="mailto:distritoverdecol@email.com"
 									className="d-flex gap-3"
@@ -144,6 +147,56 @@ export default function Home() {
 									/>
 									distritoverdecol@email.com
 								</Link>
+								<div className="d-flex flex-row">
+									<Link
+										href="https://www.instagram.com/viveclaro_co/ "
+										target="_blank"
+									>
+										<Image
+											src="/images/icons/social/instagram.svg"
+											alt="instagram"
+											width={30}
+											height={30}
+										/>
+									</Link>
+									<Link
+										href="https://www.facebook.com/Viveclaroco"
+										target="_blank"
+									>
+										<Image
+											src="/images/icons/social/facebook.svg"
+											alt="facebook"
+											width={30}
+											height={30}
+										/>
+									</Link>
+
+									<Link href="https://x.com/ViveClaro_Co" target="_blank">
+										<Image
+											src="/images/icons/social/twitter.svg"
+											alt="twitter"
+											width={30}
+											height={30}
+										/>
+									</Link>
+									<Link
+										href="https://www.tiktok.com/@viveclaro_co  "
+										target="_blank"
+									></Link>
+									<Link
+										href="https://www.youtube.com/@ViveClaro_Co"
+										target="_blank"
+									>
+										<Image
+											src="/images/icons/social/youtube.svg"
+											alt="youtube"
+											width={30}
+											height={30}
+										/>
+									</Link>
+
+									{/* <Image src="/images/icons/social/whatsapp.svg" alt="whatsapp" width={30} height={30}/> */}
+								</div>
 							</div>
 							<div className="d-flex align-items-center justify-content-center">
 								<Link href="">
