@@ -18,7 +18,7 @@ const shows = [
 	},
 	{
 		id: 2,
-		image: "/images/popular-show/circo-del-sol.png",
+		image: "/images/popular-show/cocacola-fest.png",
 		badge: "02",
 		title: "Coca-Cola Food Fest",
 		rating: "Septiembre 21",
