@@ -112,8 +112,8 @@ const Location = () => {
 			<div className="col-md-6 m-auto">
 				<div className="center-title">
 					<div className="d-block justify-content-start mb-40">
-						<h3 className="section-title small mb-20 lh-1 bckg-586d16 color-black">
-							!Aquí se encuentra vive claro¡
+						<h3 className="section-title small mb-20 lh-1 bckg-cfd952 color-black">
+							¡Aquí se encuentra vive claro!
 						</h3>
 					</div>
 				</div>
@@ -141,7 +141,7 @@ const Location = () => {
 									entre la Calle 53, Calle 26 y Cra 60. ¡Te esperamos!
 								</strong>
 							</p>
-							<div className="home-4-3d-slider-control mt-50">
+							{/* <div className="home-4-3d-slider-control mt-50">
 								<div className="d-flex align-item-center justify-content-center gap-4">
 									<button
 										onClick={handlePrev}
@@ -207,7 +207,7 @@ const Location = () => {
 									</button>
 								</div>
 								<div className="slider-pagination"></div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 					<div className="position-relative col-xl-7 col-lg-7 col-md-12 overflow-hidden border-radius-50">

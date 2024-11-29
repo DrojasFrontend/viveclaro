@@ -59,12 +59,12 @@ const categories = [
 
 const CategoriesSlider = () => {
 	return (
-		<div className="bckg-ffffff pb-80">
+		<div className="bckg-EA809E pb-80">
 			<div className="col-md-6 m-auto">
 				<div className="position-relative center-title z-1">
 					<div className="d-block justify-content-start mb-40">
 						<h3 className="position-relative section-title small mb-20 lh-1 bckg-000000">¿ERES CLIENTE CLARO</h3>
-						<p className="responsive--description fw-medium mt-30 text-center color-black">
+						<p className="responsive--description fw-medium mt-30 text-center color-white">
 							conoce los excelntes beneficios que tenemos para ti
 						</p>
 					</div>
@@ -104,7 +104,7 @@ const CategoriesSlider = () => {
 										className="thumb-img w-100"
 									/>
 								</div>
-								<div className="details text-center justify-content-center">
+								<div className="details text-center justify-content-center color-white">
 									<p>{category.title}</p>
 									{/* <Link
 										href="/category"

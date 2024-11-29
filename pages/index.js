@@ -101,7 +101,7 @@ export default function Home() {
 				className={`visibleDesktop ${geistSans.variable} ${geistMono.variable}`}
 			>
 				<main>
-					<LoadingCounter />
+					{/* <LoadingCounter /> */}
 					<ImageSequence />
 					<MovieCardSliderSm />
 					<DistritoCultura />
