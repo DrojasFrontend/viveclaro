@@ -7,7 +7,7 @@ import Link from "next/link";
 const shows = [
 	{
 		id: 1,
-		image: "/images/promotor/2.svg",
+		image: "/images/promotor/1.svg",
 	},
 	{
 		id: 2,
@@ -15,11 +15,11 @@ const shows = [
 	},
 	{
 		id: 3,
-		image: "/images/promotor/2.svg",
+		image: "/images/promotor/3.svg",
 	},
 	{
 		id: 4,
-		image: "/images/promotor/2.svg",
+		image: "/images/promotor/4.svg",
 	},
 	{
 		id: 5,
@@ -31,11 +31,11 @@ const shows = [
 	},
 	{
 		id: 6,
-		image: "/images/promotor/2.svg",
+		image: "/images/promotor/6.svg",
 	},
 	{
 		id: 7,
-		image: "/images/promotor/2.svg",
+		image: "/images/promotor/7.svg",
 	},
 	{
 		id: 8,
@@ -112,7 +112,7 @@ const Promotor = () => {
 										<Image
 											src={show.image}
 											alt=""
-											width={230}
+											width={100}
 											height={80}
 											quality={75}
 											style={{

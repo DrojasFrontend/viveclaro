@@ -68,7 +68,7 @@ const shows = [
 	},
 	{
 		id: 7,
-		image: "/images/popular-show/circo-del-sol.png",
+		image: "/images/popular-show/cocacola-fest.png",
 		badge: "02",
 		title: "Coca-Cola Food Fest",
 		rating: "Septiembre 21",
@@ -232,7 +232,7 @@ const MovieCardSliderSm = () => {
 										/>
 									</svg>
 								</a> */}
-								<div className="details position-absolute text-center">
+								<div className="details text-center details-overlay">
 									<h4 className="movie-name text-uppercase fw-normal">
 										<Link
 											href="/movie-details"
@@ -249,7 +249,7 @@ const MovieCardSliderSm = () => {
 												width={16}
 												height={16}
 											/> */}
-											<span className="color-black">{show.rating}</span>
+											<span className="color-white">{show.rating}</span>
 										</li>
 										{/* <li>
 											<Image
