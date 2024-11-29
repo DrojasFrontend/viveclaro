@@ -48,7 +48,7 @@ const shows = [
 	},
 	{
 		id: 5,
-		image: "/images/popular-show/deportivos.png",
+		image: "/images/popular-show/deportivos.jpg",
 		badge: "05",
 		title: "Eventos deportivos",
 		rating: "Mayo 16",
@@ -99,7 +99,7 @@ const MovieCardSliderSm = () => {
 			<div className="position-relative container mb-45 z-1">
 				<div className="d-block justify-content-start mb-40">
 					<h2 className="section-title large mb-20 lh-1">
-						Distrito de cultura
+						Distrito cultural
 					</h2>
 					<p className="responsive--description fw-medium mb-4 col-md-8 color-white">
 						Disfruta en familia y con amigos de espacios únicos, tanto cubiertos

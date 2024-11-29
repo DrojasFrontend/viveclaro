@@ -4,6 +4,8 @@ import { Autoplay, EffectCoverflow } from "swiper/modules";
 import Image from "next/image";
 import Link from "next/link";
 
+import ImageCarousel  from "./ImageCarousel";
+
 // Data Array
 const shows = [
 	{
@@ -136,12 +138,13 @@ const MovieCardSliderSm = () => {
 							Eventos
 						</h2>
 					</div>
-					<Image
+					<ImageCarousel/>
+					{/* <Image
 						src="/images/logotipo-viveclaro-white.png"
 						alt="clock"
 						width={256}
 						height={144}
-					/>
+					/> */}
 				</div>
 			</div>
 

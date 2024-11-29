@@ -49,21 +49,22 @@ export default function Home() {
 					<div className="d-flex justify-content-between align-items-center">
 						<div className="">
 							<Image
-								src="/images/logotipo-viveclaro-red.webp"
+								src="/images/logo-white.png"
 								alt="logo"
-								width={200}
-								height={56}
+								width={190}
+								height={80}
 							/>
 						</div>
 						<div className="d-flex align-items-center gap-4">
 							{ctas.map((cta) => (
 								<Link
+								className="color-white"
 									href={`/#section-${cta.id}`}
 									scroll={false}
 									onClick={(e) => {
 										e.preventDefault();
 										document
-											.getElementById("seccion1")
+											.getElementById("contacto")
 											?.scrollIntoView({ behavior: "smooth" });
 									}}
 								>

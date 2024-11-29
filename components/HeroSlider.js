@@ -37,16 +37,6 @@ const slides = [
 	},
 	{
 		id: 4,
-		video: "/video/video-2.mp4",
-		image: "/images/hero/hero-slidvideoe-2.webp",
-		title: "Social",
-		rating: "4.9",
-		duration: "02h 30m",
-		quality: "4k Quality",
-		description:"El impulso para una Bogotá inclusiva y próspera, que genera empleo y desarrollo para todos.",
-	},
-	{
-		id: 5,
 		video: "/video/video-5.mp4",
 		image: "/images/hero/hero-slidvideoe-2.webp",
 		title: "VERSÁTIL",
@@ -54,6 +44,16 @@ const slides = [
 		duration: "02h 30m",
 		quality: "4k Quality",
 		description:"El espacio que lo tiene todo, adaptable, único y en perfecta armonía con la naturaleza.",
+	},
+	{
+		id: 5,
+		video: "/video/video-2.mp4",
+		image: "/images/hero/hero-slidvideoe-2.webp",
+		title: "Social",
+		rating: "4.9",
+		duration: "02h 30m",
+		quality: "4k Quality",
+		description:"El impulso para una Bogotá inclusiva y próspera, que genera empleo y desarrollo para todos.",
 	},
 	{
 		id: 6,

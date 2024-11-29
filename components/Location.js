@@ -123,13 +123,13 @@ const Location = () => {
 					<div className="col-xl-5 col-lg-5">
 						<div className="section-headeng position-relative mt-80">
 							<Image
-								src="/images/logotipo-viveclaro-white.png"
+								src="/images/logo-white.png"
 								alt="clock"
-								width={256}
-								height={144}
+								width={190}
+								height={80}
 							/>
 							<h2
-								className="section-title large mb-20 lh-1 color-white"
+								className="section-title large mb-20 lh-1 color-white mt-30"
 								data-cs-stagger="0.07"
 							>
 								Ubicación

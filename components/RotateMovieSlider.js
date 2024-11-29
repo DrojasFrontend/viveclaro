@@ -118,7 +118,7 @@ const RotateMovieSlider = () => {
 					UN LUGAR PARA TODOS
 					</h2>
 					<p className="responsive--description fw-medium mb-4 col-md-6 color-white">
-						Vive Claro te sumergirá en un universo vibrante de emociones, con lugares versátiles diseñados para vivir momentos inolvidables. ¡Conócelos!
+						Vive Claro te sumergirá en un universo vibrante de emociones, con lugares versátiles diseñados para vivir momentos inolvidables.
 					</p>
 				</div>
 			</div>
