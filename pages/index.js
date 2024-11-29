@@ -117,10 +117,10 @@ export default function Home() {
 						<div className="d-flex justify-content-between align-content-center">
 							<div>
 								<Image
-									src="/images/logotipo-viveclaro-white.png"
+									src="/images/logotipo-viveclaro-distrito-red.png"
 									alt="logo"
 									width={256}
-									height={144}
+									height={186}
 								/>
 							</div>
 							<div className="col-md-4">
@@ -147,7 +147,7 @@ export default function Home() {
 									/>
 									distritoverdecol@email.com
 								</Link>
-								<div className="d-flex flex-row">
+								<div className="social d-flex flex-row">
 									<Link
 										href="https://www.instagram.com/viveclaro_co/ "
 										target="_blank"
@@ -208,8 +208,10 @@ export default function Home() {
 											height={30}
 										/>
 										<div>
+											<p>
 											calle 53 #66-19, <br />
 											Bogotá D.C Colombia.
+											</p>
 										</div>
 									</span>
 								</Link>

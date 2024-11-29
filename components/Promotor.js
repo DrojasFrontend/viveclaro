@@ -90,20 +90,20 @@ const Promotor = () => {
 	// }, []);
 
 	return (
-		<div className="promotor-area pt-80">
+		<div className="promotor-area pt-80 bckg-000000">
 			<div className="position-relative container mb-45 z-1">
 				<div className="d-block justify-content-start mb-40">
-					<h2 className="section-title large mb-20 lh-1 color-black">
+					<h2 className="section-title large mb-20 lh-1 color-E32D26">
 						¿ERES PROMOTOR DE EVENTOS?
 					</h2>
-					<p className="responsive--description fw-medium mb-4 col-md-8 color-black">
+					<p className="responsive--description fw-medium mb-4 col-md-8 color-E32D26">
 						Si deseas organizar un evento en Vive Claro, ¡hablemos!
 					</p>
 				</div>
 			</div>
 			<div className="container pb-80">
 				<div className="col-md-10 m-auto">
-					<div className="gallery">
+					<div className="gallery bckg-FFFFFF">
 						{images.map((show, index) => (
 							<div key={`${show.id}-${index}`} className="gallery-img">
 								{/* <div className={`image-wrapper ${fade ? "fade" : ""}`}> */}
