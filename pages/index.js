@@ -145,7 +145,7 @@ export default function Home() {
 										width={30}
 										height={30}
 									/>
-									distritoverdecol@email.com
+									<p>distritoverdecol@email.com</p>
 								</Link>
 								<div className="social d-flex flex-row">
 									<Link
