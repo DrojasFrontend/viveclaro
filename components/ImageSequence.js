@@ -210,7 +210,7 @@ const ImageSequence = () => {
 								priority
 							/>
 							<h2
-								className="section-title large mb-20 lh-1 split_chars"
+								className="section-title large mb-20 lh-1 "
 								ref={textRef}
 								data-cs-delay="0.8"
 								data-cs-stagger="0.07"
