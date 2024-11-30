@@ -138,13 +138,13 @@ const MovieCardSliderSm = () => {
 							Eventos
 						</h2>
 					</div>
-					<ImageCarousel/>
-					{/* <Image
-						src="/images/logotipo-viveclaro-white.png"
+					{/* <ImageCarousel/> */}
+					<Image
+						src="/images/gift-viveclaro.gif"
 						alt="clock"
-						width={256}
-						height={144}
-					/> */}
+						width={398}
+						height={166}
+					/>
 				</div>
 			</div>
 

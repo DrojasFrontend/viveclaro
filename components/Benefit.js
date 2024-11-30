@@ -65,7 +65,7 @@ const CategoriesSlider = () => {
 					<div className="d-block justify-content-start mb-40">
 						<h3 className="position-relative section-title small mb-20 lh-1 bckg-000000">¿ERES CLIENTE CLARO</h3>
 						<p className="responsive--description fw-medium mt-30 text-center color-white">
-							conoce los excelntes beneficios que tenemos para ti
+							Conoce los excelentes beneficios que tenemos para ti.
 						</p>
 					</div>
 				</div>
