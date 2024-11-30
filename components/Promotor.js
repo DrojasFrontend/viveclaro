@@ -137,7 +137,7 @@ const Promotor = () => {
 				</div>
 			</div>
 
-			<div className="bckg-000000 pt-30 pb-20">
+			{/* <div className="bckg-000000 pt-30 pb-20">
 				<div className="container">
 					<div className="row">
 						<div className="col-md-9">
@@ -155,7 +155,7 @@ const Promotor = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };
