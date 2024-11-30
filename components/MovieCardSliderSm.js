@@ -142,8 +142,8 @@ const MovieCardSliderSm = () => {
 					<Image
 						src="/images/gift-viveclaro.gif"
 						alt="clock"
-						width={398}
-						height={166}
+						width={400}
+						height={167}
 					/>
 				</div>
 			</div>
