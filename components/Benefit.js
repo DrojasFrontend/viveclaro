@@ -59,7 +59,7 @@ const categories = [
 
 const CategoriesSlider = () => {
 	return (
-		<div className="bckg-EA809E pb-80">
+		<div className="bckg-FFFFFF pb-80">
 			<div className="col-md-6 m-auto">
 				<div className="position-relative center-title z-1">
 					<div className="d-block justify-content-start mb-40">
@@ -104,8 +104,8 @@ const CategoriesSlider = () => {
 										className="thumb-img w-100"
 									/>
 								</div>
-								<div className="details text-center justify-content-center color-white">
-									<p>{category.title}</p>
+								<div className="details text-center justify-content-center color-black">
+									<p className="">{category.title}</p>
 									{/* <Link
 										href="/category"
 										className="hl-btn circle-btn flex-shrink-0"
