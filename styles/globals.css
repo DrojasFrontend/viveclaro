@@ -36,12 +36,13 @@ body {
 	--heading-color: #fff;
 	--paragraph-color: #999;
 	--body-bg: #101010;
+
 	--heading-font: "Anton", sans-serif;
-	--secondary-font: "Dosis", sans-serif;
-	--body-font: "Dosis", sans-serif;
-	--jost-font: "Jost", sans-serif;
+	--secondary-font: var(--font-amx);
+	--body-font: var(--font-amx);
+	--jost-font: var(--font-amx);
 	--bigShoulder-font: "Anton", sans-serif;
-	--gothic-font: "League Gothic", sans-serif;
+	--gothic-font: var(--font-amx);
 	--transition: all 300ms ease-out;
 	--bg-primary: linear-gradient(95deg, #181818 7.27%, #151515 99.21%);
 	--gradient-color: linear-gradient(
@@ -110,7 +111,7 @@ h3 {
 }
 
 h4 {
-	font-size: 30px;
+	font-size: 24px;
 	line-height: 1;
 }
 
@@ -122,6 +123,10 @@ h5 {
 h6 {
 	font-size: 16px;
 	line-height: 1.238;
+}
+
+span {
+	font-family: var(--font-amx);
 }
 
 h1,
@@ -136,6 +141,7 @@ h6 {
 }
 
 p {
+	font-family: var(--font-amx);
 	font-size: 20px;
 	color: var(--paragraph-color);
 	margin-bottom: 10px;
@@ -451,6 +457,7 @@ p {
 }
 
 a {
+	font-family: var(--font-amx);
 	color: inherit;
 	text-decoration: none;
 	color: var(--primary-color);
@@ -3894,7 +3901,7 @@ button.hl-btn:active span {
 	color: #e2e2e2;
 }
 .rotate-movie-card .card-description {
-	font-family: var(--jost-font);
+	font-family: var(--font-amx);
 	font-size: 16px;
 	line-height: 20px;
 	padding: 0 100px;

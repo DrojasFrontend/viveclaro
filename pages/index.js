@@ -14,16 +14,16 @@ import Promotor from "../components/Promotor";
 import Link from "next/link";
 import RotateMovieSlider from "@/components/RotateMovieSlider";
 
-const geistSans = localFont({
-	src: "./fonts/GeistVF.woff",
-	variable: "--font-geist-sans",
-	weight: "100 900",
+const amx = localFont({
+	src: "../public/fonts/AMX-Medium.woff",
+	variable: "--font-amx",
+	weight: "500",
 });
-const geistMono = localFont({
-	src: "./fonts/GeistMonoVF.woff",
-	variable: "--font-geist-mono",
-	weight: "100 900",
-});
+// const geistMono = localFont({
+// 	src: "./fonts/GeistMonoVF.woff",
+// 	variable: "--font-geist-mono",
+// 	weight: "100 900",
+// });
 
 const ctas = [
 	{ id: 1, link: "Eventos " },
@@ -44,7 +44,7 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<header className="header-area bckg-5C0B0C pt-10 pb-10 visibleDesktop">
+			<header className={`visibleDesktop ${amx.variable} header-area bckg-5C0B0C pt-10 pb-10 visibleDesktop`}>
 				<div className="container">
 					<div className="d-flex justify-content-between align-items-center">
 						<div className="">
@@ -99,7 +99,7 @@ export default function Home() {
 				</div>
 			</div>
 			<div
-				className={`visibleDesktop ${geistSans.variable} ${geistMono.variable}`}
+				className={`visibleDesktop ${amx.variable}`}
 			>
 				<main>
 					{/* <LoadingCounter /> */}
