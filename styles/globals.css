@@ -382,6 +382,10 @@ p {
 	color: #e32d26;
 }
 
+.color--a91141 {
+	color: #a91141;
+}
+
 .radius-100 {
 	border-radius: 100px !important;
 }
@@ -9873,7 +9877,7 @@ body.rtl {
 
 .location-area {
 	position: relative;
-	background-image: url(/images/location/location-bckg.webp);
+	background-image: url(/images/location/degrade.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

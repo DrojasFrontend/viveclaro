@@ -108,7 +108,7 @@ const Location = () => {
 		}
 	};
 	return (
-		<div className="location-area pb-80">
+		<div className="location-area">
 			<div className="col-md-6 m-auto">
 				<div className="center-title">
 					<div className="d-block justify-content-start mb-40">
@@ -120,8 +120,8 @@ const Location = () => {
 			</div>
 			<div className="section-bckg">
 				<div className="row">
-					<div className="col-xl-5 col-lg-5">
-						<div className="section-headeng position-relative mt-80">
+					<div className="col-xl-5 col-lg-5 d-flex flex-column justify-content-center">
+						<div className="section-headeng position-relative">
 							<Image
 								src="/images/logo-white.png"
 								alt="clock"
@@ -129,16 +129,20 @@ const Location = () => {
 								height={80}
 							/>
 							<h2
-								className="section-title large mb-20 lh-1 color-white mt-30"
+								className="section-title large mb-20 lh-1 color-white mt-30 color--a91141"
 								data-cs-stagger="0.07"
 							>
 								Ubicación
 							</h2>
 							<p className="section-description-2 mb-xl-4 mb-3 pb-2 fade-slide bottom color-white">
 								Nos encontramos en una ubicación estratégica en la zona de
-								Salitre de Bogota,{" "}
+								Salitre de Bogota, 
 								<strong>
-									entre la Calle 53, Calle 26 y Cra 60. ¡Te esperamos!
+									entre la Calle 53, Calle 26 y Cra 60.
+								</strong>
+								<div className="mb-30"></div>
+								<strong>
+									¡Te esperamos!
 								</strong>
 							</p>
 							{/* <div className="home-4-3d-slider-control mt-50">
@@ -212,12 +216,12 @@ const Location = () => {
 					</div>
 					<div className="position-relative col-xl-7 col-lg-7 col-md-12 overflow-hidden border-radius-50">
 						<Image
-							src="/images/location/fase-1.png"
+							src="/images/location/fase-1-new.png"
 							alt=""
-							width={500}
-							height={600}
+							width={805}
+							height={598}
 							style={{
-								objectFit: "cover",
+								objectFit: "contain",
 								objectPosition: "center",
 							}}
 							className="w-100 flow-hidden border-radius-50"
