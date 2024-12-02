@@ -379,7 +379,7 @@ p {
 }
 
 .color-E32D26 {
-	color: #E32D26;
+	color: #e32d26;
 }
 
 .radius-100 {
@@ -3812,7 +3812,7 @@ button.hl-btn:active span {
 	background: linear-gradient(
 		180deg,
 		rgb(31 31 31 / 20%) 0%,
-		rgba(14, 14, 14, 0.20) 63.5%,
+		rgba(14, 14, 14, 0.2) 63.5%,
 		#0909098f 100%
 	);
 	mix-blend-mode: multiply;
@@ -5947,7 +5947,7 @@ button.hl-btn:active span {
 	overflow: hidden;
 	margin: 0 auto 30px;
 	border-radius: 100%;
-	background: #C82A39;
+	background: #c82a39;
 	border: 1px solid #707070;
 }
 .category-card .thumbnail .thumb-img {
@@ -9781,11 +9781,11 @@ body.rtl {
 }
 
 .bckg-FFA131 {
-	background: #FFA131;
+	background: #ffa131;
 }
 
 .bckg-EA809E {
-	background: #EA809E;
+	background: #ea809e;
 }
 
 .bckg-cfd952 {
@@ -9805,11 +9805,11 @@ body.rtl {
 }
 
 .bckg-FFFFFF {
-	background: #FFFFFF;
+	background: #ffffff;
 }
 
 .bckg-E32D26 {
-	background-color: #E32D26;
+	background-color: #e32d26;
 }
 @media only screen and (max-width: 575px) {
 	.section-bckg {
@@ -9992,11 +9992,54 @@ body.rtl {
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	border: 1px solid #000;
 	margin-bottom: 0;
+	gap: 20px;
 }
 
 .gallery .gallery-img {
 	padding: 10px;
+	text-align: center;
 	border-bottom: 1px solid #000;
+}
+
+.gallery-img img {
+	width: auto;
+	height: auto;
+}
+
+.gallery-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gallery .gallery-img:nth-child(5) h3 {
+	position: relative;
+	font-family: var(--font-amx);
+	color: #fff;
+	font-size: 24px;
+	letter-spacing: 10px;
+	width: 100%;
+	margin: 24px 0;
+}
+
+.gallery .gallery-img:nth-child(5) h3::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 40%;
+	border-bottom: 1px solid;
+}
+
+.gallery .gallery-img:nth-child(5) h3::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	width: 40%;
+	border-bottom: 1px solid;
 }
 
 .gallery .image-wrapper {
@@ -10009,56 +10052,59 @@ body.rtl {
 	opacity: 0;
 }
 
-.gallery .gallery-img:nth-child(1),
-.gallery .gallery-img:nth-child(2),
-.gallery .gallery-img:nth-child(3),
-.gallery .gallery-img:nth-child(4){
+.gallery .gallery-img:nth-child(1) {
+	grid-column: 8 span;
+	width: 200px;
+	height: 100px;
+	margin: -70px auto 0;
+}
+
+
+
+.gallery .gallery-img:nth-child(2) {
 	grid-column: 2 span;
 }
 
-.gallery .gallery-img:nth-child(1),
-.gallery .gallery-img:nth-child(2),
-.gallery .gallery-img:nth-child(3),
-.gallery .gallery-img:nth-child(7) {
-	border-right: 1px solid #000;
+.gallery .gallery-img:nth-child(2) {
+	grid-column: 2 span;
 }
 
-.gallery .gallery-img:nth-child(5),
-.gallery .gallery-img:nth-child(6) {
+.gallery .gallery-img:nth-child(3) {
+	grid-column: 3 span;
+}
+
+.gallery .gallery-img:nth-child(4) {
+	grid-column: 3 span;
+}
+
+.gallery .gallery-img:nth-child(5) {
 	grid-column: 8 span;
 }
 
+.gallery .gallery-img:nth-child(6),
 .gallery .gallery-img:nth-child(7),
-.gallery .gallery-img:nth-child(8)  {
-	grid-column: 4 span;
-}
-
+.gallery .gallery-img:nth-child(8),
 .gallery .gallery-img:nth-child(9) {
 	grid-column: 2 span;
 }
 
 .gallery .gallery-img:nth-child(10),
-.gallery .gallery-img:nth-child(12){
+.gallery .gallery-img:nth-child(14) {
 	grid-column: 1 span;
 }
 
-.gallery .gallery-img:nth-child(13) {
+.gallery .gallery-img:nth-child(11),
+.gallery .gallery-img:nth-child(12),
+.gallery .gallery-img:nth-child(13)
+ {
 	grid-column: 2 span;
 }
 
-.gallery .gallery-img:nth-child(11) {
-	grid-column: 2 span;
-}
 
-.gallery .gallery-img:nth-child(14) {
-	grid-column: 8 span;
-	border-bottom: 0;
-}
 
 .image-wrapper img {
 	width: 100%;
 }
-
 
 .custom-button {
 	display: flex;
@@ -10081,13 +10127,12 @@ body.rtl {
 }
 
 .footer .custom-button {
-	background-color: #E32D26;
+	background-color: #e32d26;
 }
 
 .footer {
 	background-color: #5c0b0c;
 }
-
 
 .footer a img {
 	mix-blend-mode: overlay;
@@ -10095,7 +10140,7 @@ body.rtl {
 
 .footer p,
 .footer h5 {
-	color: #E32D26;
+	color: #e32d26;
 }
 
 .footer input[type="email"] {
@@ -10104,12 +10149,12 @@ body.rtl {
 	margin-bottom: 40px;
 	color: #fff;
 	border: 0;
-	border-bottom: 1px solid #E32D26;
+	border-bottom: 1px solid #e32d26;
 	background-color: transparent;
 }
 
 .footer input[type="email"]::placeholder {
-	color: #E32D26;
+	color: #e32d26;
 }
 
 .footer .social a:last-child img {

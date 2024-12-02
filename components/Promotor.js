@@ -9,57 +9,59 @@ const shows = [
 		id: 1,
 		image: "/images/promotor/1.svg",
 	},
+	
 	{
-		id: 2,
+		id: 3,
 		image: "/images/promotor/2.svg",
 	},
 	{
-		id: 3,
+		id: 4,
 		image: "/images/promotor/3.svg",
 	},
 	{
-		id: 4,
+		id: 5,
 		image: "/images/promotor/4.svg",
 	},
+	
 	{
-		id: 5,
+		id: 7,
 		text: "APOYAN",
 	},
 	{
-		id: 6,
+		id: 8,
 		image: "/images/promotor/5.svg",
 	},
 	{
-		id: 6,
+		id: 9,
 		image: "/images/promotor/6.svg",
 	},
 	{
-		id: 7,
+		id: 10,
 		image: "/images/promotor/7.svg",
 	},
 	{
-		id: 8,
-		image: "/images/promotor/8.svg",
-	},
-	{
-		id: 9,
+		id: 11,
 		image: "/images/promotor/9.svg",
 	},
 	{
-		id: 10,
+		id: 12,
 		image: "/images/promotor/10.svg",
 	},
 	{
-		id: 11,
+		id: 13,
 		image: "/images/promotor/11.svg",
 	},
 	{
-		id: 12,
-		image: "/images/promotor/12.svg",
+		id: 14,
+		image: "/images/promotor/8.svg",
 	},
 	{
-		id: 13,
+		id: 15,
 		image: "/images/promotor/13.svg",
+	},
+	{
+		id: 16,
+		image: "/images/promotor/12.svg",
 	},
 ];
 
@@ -112,25 +114,33 @@ const Promotor = () => {
 			</div>
 			<div className="container pb-80">
 				<div className="col-md-10 m-auto">
-					<div className="gallery bckg-FFFFFF">
+					<Image
+						src="/images/promotor/carpa.svg"
+						alt=""
+						width={1157}
+						height={180}
+						quality={75}
+						style={{
+							objectFit: "contain",
+						}}
+					/>
+					<div className="gallery">
 						{images.map((show, index) => (
 							<div key={`${show.id}-${index}`} className="gallery-img">
 								{/* <div className={`image-wrapper ${fade ? "fade" : ""}`}> */}
-								<div className="image-wrapper">
-									{show.image && (
-										<Image
-											src={show.image}
-											alt=""
-											width={100}
-											height={80}
-											quality={75}
-											style={{
-												objectFit: "contain",
-											}}
-										/>
-									)}
-									{!show.image && <h3 className="color-black">{show.text}</h3>}
-								</div>
+								{show.image && (
+									<Image
+										src={show.image}
+										alt=""
+										width={150}
+										height={80}
+										quality={75}
+										style={{
+											objectFit: "contain",
+										}}
+									/>
+								)}
+								{!show.image && <h3 className="color-black">{show.text}</h3>}
 							</div>
 						))}
 					</div>
