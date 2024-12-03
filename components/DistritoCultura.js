@@ -38,7 +38,7 @@ const shows = [
 	},
 	{
 		id: 4,
-		image: "/images/popular-show/Ferias-Culturales-y-Gastronómicas.png",
+		image: "/images/popular-show/ferias-culturales.png",
 		badge: "04",
 		title: "Ferias culturales & gastronómicas",
 		rating: "8.8",
