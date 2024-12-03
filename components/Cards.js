@@ -132,6 +132,11 @@ const movies = [
 			"11 especies herbáceas terrestres, 1027 individuos.",
 			"3 especies herbáceas acuáticas, 132 individuos.",
 		],
+		modalImages: [
+			"/images/fase4/fase-1.jpg",
+			"/images/fase4/fase-2.jpg",
+			"/images/fase4/fase-3.jpg",
+		],
 		buttonText: "Conoce más detalles aquí",
 		color: "#4f6d00",
 	},
