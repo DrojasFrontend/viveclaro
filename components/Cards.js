@@ -311,7 +311,7 @@ const NewestReleases = () => {
 								</ul>
 							</div>
 
-							<div className="modal-image-container">
+							{/* <div className="modal-image-container">
 								<Swiper
 									modules={[Navigation]}
 									navigation
@@ -351,7 +351,7 @@ const NewestReleases = () => {
 										&#8250;
 									</button>
 								)}
-							</div>
+							</div> */}
 
 							
 						</>

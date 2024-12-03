@@ -217,7 +217,7 @@ const ImageSequence = () => {
 							>
 								¡TE DAMOS LA BIENVENIDA!
 							</h2>
-							<p className="responsive--description fw-medium mb-4 color-white">
+							<p className="responsive--description fw-medium mb-4 color-white col-md-10 m-auto">
 								El primer y más versátil espacio multipropósito para la cultura
 								y el entretenimiento en Colombia.
 							</p>

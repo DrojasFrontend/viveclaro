@@ -142,7 +142,7 @@ h6 {
 
 p {
 	font-family: var(--font-amx);
-	font-size: 20px;
+	font-size: 24px;
 	color: var(--paragraph-color);
 	margin-bottom: 10px;
 }
@@ -3174,6 +3174,10 @@ button.hl-btn:active span {
 	margin-bottom: 6px;
 }
 
+.movie-card-small .details .movie-info li {
+	font-size: 22px;
+}
+
 .movie-card-small .details h4 {
 	display: block;
 	text-align: left;
@@ -6001,7 +6005,7 @@ button.hl-btn:active span {
 }
 
 .category-card .details .detail {
-	font-size: 18px;
+	font-size: 22px;
 	color: #fff;
 }
 
@@ -6021,17 +6025,17 @@ button.hl-btn:active span {
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
 	.category-card .details .title {
-		font-size: 24px;
+		font-size: 32px;
 	}
 }
 @media only screen and (max-width: 767px) {
 	.category-card .details .title {
-		font-size: 24px;
+		font-size: 32px;
 	}
 }
 @media only screen and (max-width: 575px) {
 	.category-card .details .title {
-		font-size: 22px;
+		font-size: 32px;
 	}
 }
 .category-card .details .circle-btn {
@@ -10019,6 +10023,10 @@ body.rtl {
 	margin-bottom: 0;
 }
 
+.track p {
+	font-size: 30px;
+}
+
 .brick-wrap {
 	width: 100% !important;
 	height: 100vh;
@@ -10371,7 +10379,7 @@ body.rtl {
 }
 
 .header-area a {
-	font-size: 16px;
+	font-size: 17px;
 }
 
 .visibleDesktop {
