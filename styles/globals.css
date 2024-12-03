@@ -386,6 +386,10 @@ p {
 	color: #a91141;
 }
 
+.color-cfd952 {
+	color: #cfd952;
+}
+
 .radius-100 {
 	border-radius: 100px !important;
 }
@@ -2426,11 +2430,42 @@ object {
 }
 
 .rotate-movie-slider {
+	position: relative;
+	display: flex;
+	align-items: center;
 	background: #ab1d44;
-	/* background-image: url(/images/background/rotate-movie-area-bg.webp); */
+	background-image: url(/images/location/location-bckg.webp);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.rotate-movie-slider::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.50);
+}
+
+.rotate-movie-slider .aro {
+	top: -100px;
+	left: 50%;
+	transform: translate(-50%, 5%);
+}
+
+.rotate-movie-slider .logo{
+	top: 50px;
+	left: 50px;
+}
+
+.movie-slider {
+	height: 800px;
 }
 
 .trending-slider-two {

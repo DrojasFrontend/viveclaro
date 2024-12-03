@@ -140,78 +140,13 @@ const Location = () => {
 								<strong>
 									entre la Calle 53, Calle 26 y Cra 60.
 								</strong>
-								<div className="mb-30"></div>
+							</p>
+							<div className="mb-30"></div>
+							<p className="section-description-2 mb-xl-4 mb-3 pb-2 fade-slide bottom color-white">
 								<strong>
 									¡Te esperamos!
 								</strong>
 							</p>
-							{/* <div className="home-4-3d-slider-control mt-50">
-								<div className="d-flex align-item-center justify-content-center gap-4">
-									<button
-										onClick={handlePrev}
-										className="slider-btn slider-btn--big prev-slide"
-										aria-label="Previous slide"
-									>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="40"
-											height="29"
-											viewBox="0 0 40 29"
-											fill="none"
-										>
-											<path
-												fillRule="evenodd"
-												clipRule="evenodd"
-												d="M12.91 1.5125V0.322754H15.2895V1.5125C15.2895 6.03007 12.7856 10.375 9.017 12.9489H38.3558V15.3284H9.01686C12.7856 17.9023 15.2895 22.2472 15.2895 26.7648V27.9545H12.91V26.7648C12.91 20.9162 7.71984 15.3487 1.50732 15.3285C1.496 15.3285 1.48468 15.3285 1.47336 15.3285H0.283611V15.3284V12.949V12.9489H0.284611H1.47336H1.519C7.72634 12.9217 12.91 7.35752 12.91 1.5125Z"
-												fill="#fff"
-											/>
-										</svg>
-									</button>
-									<button
-										onClick={handleNext}
-										className="slider-btn slider-btn--big next-slide"
-										aria-label="Next slide"
-									>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											version="1.1"
-											width="90"
-											height="90"
-											className="linear-circle"
-											ref={progressCircle}
-										>
-											<defs>
-												<linearGradient id="bg_gradient">
-													<stop offset="0%" stopColor="#AB1D44" />
-													<stop offset="39%" stopColor="#AB1D44" />
-													<stop offset="100%" stopColor="#AB1D44" />
-												</linearGradient>
-											</defs>
-											<circle
-												cx="24"
-												cy="24"
-												r="20"
-												strokeLinecap="round"
-											></circle>
-										</svg>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="40"
-											height="29"
-											viewBox="0 0 40 29"
-											fill="none"
-										>
-											<path
-												fillRule="evenodd"
-												clipRule="evenodd"
-												d="M26.4206 1.7022V0.512451H24.0411V1.7022C24.0411 6.21977 26.5449 10.5647 30.3136 13.1386H0.974731V15.5181H30.3137C26.545 18.092 24.0411 22.4369 24.0411 26.9545V28.1442H26.4206V26.9545C26.4206 21.1059 31.6107 15.5384 37.8232 15.5181C37.8346 15.5182 37.8459 15.5182 37.8572 15.5182H39.047V15.5181V13.1387V13.1386H39.046H37.8572H37.8116C31.6042 13.1114 26.4206 7.54722 26.4206 1.7022Z"
-												fill="#fff"
-											/>
-										</svg>
-									</button>
-								</div>
-								<div className="slider-pagination"></div>
-							</div> */}
 						</div>
 					</div>
 					<div className="position-relative col-xl-7 col-lg-7 col-md-12 overflow-hidden border-radius-50">
@@ -227,112 +162,6 @@ const Location = () => {
 							className="w-100 flow-hidden border-radius-50"
 						/>
 					</div>
-					{/* <div className="col-xl-8 col-lg-8 col-md-12 overflow-hidden">
-						<div className="swiper swiper-3d-slider">
-							<div className="swiper-container">
-								<div className="swiper-wrapper">
-									<Swiper
-										modules={[
-											Autoplay,
-											EffectCoverflow,
-											Navigation,
-											Pagination,
-										]}
-										effect="coverflow"
-										centeredSlides={true}
-										speed={500}
-										loop={true}
-										slidesPerView={5.5}
-										allowTouchMove={false}
-										touchRatio={1.5}
-										watchSlidesProgress={true}
-										observer={true}
-										onAutoplayTimeLeft={(s, time, progress) => {
-											if (progressCircle.current) {
-												progressCircle.current.style.setProperty(
-													"--progress",
-													1 - progress
-												);
-											}
-										}}
-										coverflowEffect={{
-											rotate: -2,
-											modifier: -1,
-											slideShadows: false,
-											stretch: "-80%",
-										}}
-										autoplay={{
-											delay: 5000,
-											disableOnInteraction: false,
-											pauseOnMouseEnter: true,
-										}}
-										navigation={{
-											nextEl: ".hero-4-3d-next-slide",
-											prevEl: ".hero-4-3d-prev-slide",
-										}}
-										pagination={{
-											el: ".slider-pagination",
-											type: "fragtion",
-										}}
-										breakpoints={{
-											0: {
-												slidesPerView: 1,
-												coverflowEffect: {
-													stretch: "-98%",
-												},
-											},
-											600: {
-												slidesPerView: 2,
-												coverflowEffect: {
-													stretch: "-98%",
-												},
-											},
-											992: {
-												slidesPerView: 5.5,
-												coverflowEffect: {
-													stretch: "-95%",
-												},
-											},
-											1024: {
-												slidesPerView: 5.5,
-												coverflowEffect: {
-													stretch: "-85%",
-												},
-											},
-											1366: {
-												slidesPerView: 5.5,
-												coverflowEffect: {
-													stretch: "-85%",
-												},
-											},
-										}}
-										onSwiper={(swiper) => {
-											swiperRef.current = swiper;
-										}}
-										className="mySwiper"
-									>
-										{shows.map((show) => (
-											<>
-												<SwiperSlide key={show.id}>
-													<Image
-														src={show.image}
-														alt={show.title}
-														width={500}
-														height={600}
-														style={{
-															objectFit: "cover",
-															objectPosition: "center",
-														}}
-														className="w-100"
-													/>
-												</SwiperSlide>
-											</>
-										))}
-									</Swiper>
-								</div>
-							</div>
-						</div>
-					</div> */}
 				</div>
 			</div>
 		</div>
