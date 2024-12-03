@@ -36,6 +36,7 @@ const movies = [
 			"12 especies herbáceas terrestres, 4720 individuos.",
 			"3 especies herbáceas acuáticas, 48 individuos.",
 		],
+		modalImages: ["/images/fase1/fase-1.jpg", "/images/fase1/fase-2.jpg"],
 		buttonText: "Conoce más detalles aquí",
 		color: "#d9e11c",
 	},
@@ -68,6 +69,7 @@ const movies = [
 			"2 bebederos para aves",
 			"2 hoteles de insectos",
 		],
+		modalImages: ["/images/fase2/fase-1.jpg", "/images/fase2/fase-2.jpg"],
 		buttonText: "Conoce más detalles aquí",
 		color: "#ffa116",
 	},
@@ -89,6 +91,13 @@ const movies = [
 			"51 especies: 18 árboles, 12 arbolitos, 17 arbustos, 4 herbáceas.",
 			"705 individuos arbóreos: 233 árboles, 244 arbolitos, 228 arbustos.",
 			"702 herbáceas.",
+		],
+		modalImages: [
+			"/images/fase3/fase-1.jpg",
+			"/images/fase3/fase-2.jpg",
+			"/images/fase3/fase-3.jpg",
+			"/images/fase3/fase-4.jpg",
+			"/images/fase3/fase-5.jpg",
 		],
 		buttonText: "Conoce más detalles aquí",
 		color: "#39c493",
@@ -257,7 +266,29 @@ const NewestReleases = () => {
 								×
 							</button>
 
-							{/* <div className="modal-image-container">
+							<div className="modal-image-container">
+								<Swiper
+									modules={[Navigation]}
+									navigation
+									spaceBetween={0}
+									slidesPerView={1}
+								>
+									{currentMovie.modalImages.map((image, index) => (
+										<SwiperSlide key={index}>
+											<Image
+												src={image}
+												alt={`${currentMovie.title} imagen ${index + 1}`}
+												width={570}
+												height={408}
+												style={{
+													objectFit: "contain",
+													objectPosition: "center",
+												}}
+												className="modal-slide-image"
+											/>
+										</SwiperSlide>
+									))}
+								</Swiper>
 								{currentIndex > 0 && (
 									<button
 										className="modal-navigation modal-prev"
@@ -275,7 +306,7 @@ const NewestReleases = () => {
 										&#8250;
 									</button>
 								)}
-							</div> */}
+							</div>
 
 							<div
 								className="modal-info"
@@ -284,10 +315,30 @@ const NewestReleases = () => {
 								<h3 className="modal-title">
 									Inventario {currentMovie.title}
 									<span>
-										<img src="/images/bebederos-green.svg" alt="icon" width="40" height="40" />
-										<img src="/images/insectos-green.svg" alt="icon" width="40" height="40" />
-										<img src="/images/arboles-green.svg" alt="icon" width="40" height="40" />
-										<img src="/images/hiervas-green.svg" alt="icon" width="40" height="40" />
+										<img
+											src="/images/bebederos-green.svg"
+											alt="icon"
+											width="40"
+											height="40"
+										/>
+										<img
+											src="/images/insectos-green.svg"
+											alt="icon"
+											width="40"
+											height="40"
+										/>
+										<img
+											src="/images/arboles-green.svg"
+											alt="icon"
+											width="40"
+											height="40"
+										/>
+										<img
+											src="/images/hiervas-green.svg"
+											alt="icon"
+											width="40"
+											height="40"
+										/>
 									</span>
 								</h3>
 								<ul>
