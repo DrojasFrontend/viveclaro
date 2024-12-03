@@ -7,12 +7,15 @@ import Link from "next/link";
 const shows = [
 	{
 		id: 1,
+		text: "PATROCINADOR OFICIAL",
+	},
+	{
+		id: 2,
 		image: "/images/promotor/1.svg",
 	},
-
 	{
 		id: 3,
-		image: "/images/promotor/2.svg",
+		imag3: "/images/promotor/2.svg",
 	},
 	{
 		id: 4,
@@ -20,16 +23,19 @@ const shows = [
 	},
 	{
 		id: 5,
+		text: "ALIADO SOSTENIBLE",
+	},
+	{
+		id: 6,
 		image: "/images/promotor/4.svg",
 	},
-
 	{
 		id: 7,
-		text: "APOYAN",
+		text: "APOYA",
 	},
 	{
 		id: 8,
-		image: "/images/promotor/5.svg",
+		image: "/images/promotor/6.svg",
 	},
 	{
 		id: 9,
@@ -133,8 +139,8 @@ const Promotor = () => {
 					</div>
 				</div> */}
 				<div className="container pb-80">
-					<div className="col-md-10 m-auto">
-						<Image
+					<div className="col-md-10 m-auto pt-100">
+						{/* <Image
 							src="/images/promotor/carpa.svg"
 							alt=""
 							width={1157}
@@ -143,7 +149,7 @@ const Promotor = () => {
 							style={{
 								objectFit: "contain",
 							}}
-						/>
+						/> */}
 						<div className="gallery">
 							{images.map((show, index) => (
 								<div key={`${show.id}-${index}`} className="gallery-img">

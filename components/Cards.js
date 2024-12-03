@@ -271,6 +271,46 @@ const NewestReleases = () => {
 								×
 							</button>
 
+							<div
+								className="modal-info"
+								style={{ backgroundColor: currentMovie.color }}
+							>
+								<h3 className="modal-title">
+									Inventario {currentMovie.title}
+									<span>
+										<img
+											src="/images/bebederos-green.svg"
+											alt="icon"
+											width="40"
+											height="40"
+										/>
+										<img
+											src="/images/insectos-green.svg"
+											alt="icon"
+											width="40"
+											height="40"
+										/>
+										<img
+											src="/images/arboles-green.svg"
+											alt="icon"
+											width="40"
+											height="40"
+										/>
+										<img
+											src="/images/hiervas-green.svg"
+											alt="icon"
+											width="40"
+											height="40"
+										/>
+									</span>
+								</h3>
+								<ul>
+									{currentMovie.modalDetails.map((detail, index) => (
+										<li key={index}>{detail}</li>
+									))}
+								</ul>
+							</div>
+
 							<div className="modal-image-container">
 								<Swiper
 									modules={[Navigation]}
@@ -313,45 +353,7 @@ const NewestReleases = () => {
 								)}
 							</div>
 
-							<div
-								className="modal-info"
-								style={{ backgroundColor: currentMovie.color }}
-							>
-								<h3 className="modal-title">
-									Inventario {currentMovie.title}
-									<span>
-										<img
-											src="/images/bebederos-green.svg"
-											alt="icon"
-											width="40"
-											height="40"
-										/>
-										<img
-											src="/images/insectos-green.svg"
-											alt="icon"
-											width="40"
-											height="40"
-										/>
-										<img
-											src="/images/arboles-green.svg"
-											alt="icon"
-											width="40"
-											height="40"
-										/>
-										<img
-											src="/images/hiervas-green.svg"
-											alt="icon"
-											width="40"
-											height="40"
-										/>
-									</span>
-								</h3>
-								<ul>
-									{currentMovie.modalDetails.map((detail, index) => (
-										<li key={index}>{detail}</li>
-									))}
-								</ul>
-							</div>
+							
 						</>
 					)}
 				</div>
