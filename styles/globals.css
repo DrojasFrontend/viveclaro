@@ -5964,7 +5964,7 @@ button.hl-btn:active span {
 	border-radius: 30px;
 	/* box-shadow: 0 0 0 2px #1d1d1d inset; */
 	/* background: linear-gradient(134deg, #151515 0.83%, #101010 100%); */
-	backdrop-filter: blur(10px);
+	/* backdrop-filter: blur(10px); */
 	padding: 30px;
 	padding-bottom: 25px;
 	position: relative;
@@ -5997,12 +5997,26 @@ button.hl-btn:active span {
 	font-weight: 400;
 	text-transform: uppercase;
 	margin-top: 3px;
-	color: #000;
+	color: #fff;
 }
 
 .category-card .details .detail {
 	font-size: 18px;
-	color: #000;
+	color: #fff;
+}
+
+.beneficios {
+	background-image: url(/images/fondo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+@media only screen and (min-width: 1280px) {
+	.beneficios {
+		background-attachment: fixed;
+	}
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
