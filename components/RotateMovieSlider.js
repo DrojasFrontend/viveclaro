@@ -118,7 +118,7 @@ const RotateMovieSlider = () => {
 
 	return (
 		<div className="movie-slider rotate-movie-slider py-80 position-relative">
-			<Image
+			{/* <Image
 				src="/images/aro.png"
 				alt=""
 				width={1300}
@@ -128,9 +128,9 @@ const RotateMovieSlider = () => {
 				style={{
 					objectFit: "cover",
 				}}
-			/>
+			/> */}
 
-			<Image className="position-absolute logo" src="/images/logo-green.png" alt="logo" width={249} height={95} />
+			{/* <Image className="position-absolute logo" src="/images/logo-green.png" alt="logo" width={249} height={95} /> */}
 
 			<div className="container pt-100 z-1">
 				<div className="d-flex flex-column justify-content-center align-items-center">

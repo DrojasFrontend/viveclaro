@@ -215,7 +215,7 @@ const ImageSequence = () => {
 								data-cs-delay="0.8"
 								data-cs-stagger="0.07"
 							>
-								¡TE DAMOS LA BIENVENIDA A VIVE CLARO!
+								¡TE DAMOS LA BIENVENIDA!
 							</h2>
 							<p className="responsive--description fw-medium mb-4 color-white">
 								El primer y más versátil espacio multipropósito para la cultura

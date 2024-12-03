@@ -184,7 +184,7 @@ const ImageSequence = () => {
                 priority
               />
 							<h2 className="section-title large mb-20 lh-1">
-								¡TE DAMOS LA BIENVENIDA A VIVE CLARO!
+								¡TE DAMOS LA BIENVENIDA!
 							</h2>
 							<p className="responsive--description fw-medium mb-4 color-white">
 								El primer y más versátil espacio multipropósito para la cultura y el entretenimiento en Colombia.
