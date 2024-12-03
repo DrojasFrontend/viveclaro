@@ -92,7 +92,7 @@ const Promotor = () => {
 	// }, []);
 
 	return (
-		<div className="promotor-area pt-80 bckg-000000">
+		<div className="promotor-area pt-80 bckg-000000" id="section-7">
 			<div className="position-relative container mb-45 z-1">
 				<div className="row">
 					<div className="col-md-9">

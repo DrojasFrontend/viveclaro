@@ -26,11 +26,14 @@ const amx = localFont({
 // });
 
 const ctas = [
-	{ id: 1, link: "Eventos " },
-	{ id: 2, link: "Distrito de cultura " },
-	{ id: 3, link: "Cliente " },
-	{ id: 4, link: "Ubicación " },
-	{ id: 5, link: "Promotores" },
+	{ id: 1, link: "Eventos" },
+	{ id: 2, link: "Distrito Cultural" },
+	{ id: 3, link: "No sé aún" },
+	{ id: 4, link: "Clientes Claro " },
+	{ id: 5, link: "Ubicación" },
+	{ id: 6, link: "Diseño Paisajístico" },
+	{ id: 7, link: "Patrocinadores" },
+	{ id: 8, link: "Contáctanos" },
 ];
 
 export default function Home() {
@@ -44,7 +47,9 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<header className={`visibleDesktop ${amx.variable} header-area bckg-5C0B0C pt-10 pb-10 visibleDesktop`}>
+			<header
+				className={`visibleDesktop ${amx.variable} header-area bckg-5C0B0C pt-10 pb-10 visibleDesktop`}
+			>
 				<div className="container">
 					<div className="d-flex justify-content-between align-items-center">
 						<div className="">
@@ -55,36 +60,42 @@ export default function Home() {
 								height={80}
 							/>
 						</div>
-						<div className="d-flex align-items-center gap-4">
+						<div className="d-flex align-items-center gap-3">
 							{ctas.map((cta) => (
 								<Link
-								className="color-white"
-									href={`/#section-${cta.id}`}
-									scroll={false}
+									className="color-white"
+									href={`#section-${cta.id}`}
 									onClick={(e) => {
 										e.preventDefault();
-										document
-											.getElementById("contacto")
-											?.scrollIntoView({ behavior: "smooth" });
+										const element = document.getElementById(
+											`section-${cta.id}`
+										);
+										if (element) {
+											const elementPosition = element.offsetTop - 100; // restamos 100px
+											window.scrollTo({
+												top: elementPosition,
+												behavior: "smooth",
+											});
+										}
 									}}
 								>
 									{cta.link}
 								</Link>
 							))}
 
-							<div className="">
+							{/* <div className="">
 								<Link
 									href="#"
 									className="custom-button custom-button-transparent"
 								>
 									CONTÁCTENOS
 								</Link>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
 			</header>
-			<div className="visibleMobile">
+			{/* <div className="visibleMobile">
 				<div className="visibleMobile-logo">
 					<Image
 						src="/images/logotipo-viveclaro-red.webp"
@@ -97,10 +108,8 @@ export default function Home() {
 						verde multipropósito a la palma de tu mano.
 					</p>
 				</div>
-			</div>
-			<div
-				className={`visibleDesktop ${amx.variable}`}
-			>
+			</div> */}
+			<div className={`${amx.variable}`}>
 				<main>
 					{/* <LoadingCounter /> */}
 					<ImageSequence />
@@ -210,8 +219,8 @@ export default function Home() {
 										/>
 										<div>
 											<p>
-											calle 53 #66-19, <br />
-											Bogotá D.C Colombia.
+												calle 53 #66-19, <br />
+												Bogotá D.C Colombia.
 											</p>
 										</div>
 									</span>

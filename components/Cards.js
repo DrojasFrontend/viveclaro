@@ -7,39 +7,124 @@ import Link from "next/link";
 const movies = [
 	{
 		id: 1,
-		title: "INVENTARIO FASE 1",
+		title: "Fase 1",
 		image: "/images/location/fase-1.png",
-		rating: "7.9",
-		duration: "02h 00m",
-		quality: "4k Quality",
-		genres: ["Menace", "Comedy"],
+		icono: "/images/location/fase-1.png",
+		details: [
+			{
+				text: "2 Bebederos para aves",
+				icon: "/images/bebederos.svg",
+			},
+			{
+				text: "2 Hoteles de insectos",
+				icon: "/images/insectos.svg",
+			},
+			{
+				text: "Más de 40 especies y 300 individuos arbóreos",
+				icon: "/images/arboles.svg",
+			},
+			{
+				text: "12 Especies herbáceas terrestres",
+				icon: "/images/hiervas.svg",
+			},
+		],
+		modalDetails: [
+			"2 bebederos para aves",
+			"2 hoteles de insectos",
+			"40 especies: 11 árboles, 11 arbolitos, 14 arbustos y 12 herbáceas.",
+			"363 individuos arbóreos: 75 árboles, 132 arbolitos, 156 arbustos.",
+			"12 especies herbáceas terrestres, 4720 individuos.",
+			"3 especies herbáceas acuáticas, 48 individuos.",
+		],
+		buttonText: "Conoce más detalles aquí",
+		color: "#d9e11c",
 	},
 	{
 		id: 2,
-		title: "INVENTARIO FASE 2",
+		title: "Fase 2",
 		image: "/images/location/fase-2.png",
-		rating: "5.8",
-		duration: "02h 30m",
-		quality: "4k Quality",
-		genres: ["Action", "Comedy", "Crime"],
+		details: [
+			{
+				text: "Más de 40 especies de árboles y arbustos",
+				icon: "",
+			},
+			{
+				text: "Más 400 individuos arbóreos",
+				icon: "/images/arboles.svg",
+			},
+			{
+				text: "4 Especies herbáceas terrestres",
+				icon: "/images/hiervas.svg",
+			},
+			{
+				text: "2 Bebederos para aves",
+				icon: "/images/bebederos.svg",
+			},
+		],
+		modalDetails: [
+			"41 especies: 15 árboles, 10 arbolitos, 12 arbustos y 4 herbáceas.",
+			"402 individuos arbóreos: 144 árboles, 136 arbolitos, 122 arbustos.",
+			"4 especies herbáceas terrestres, 172 individuos",
+			"2 bebederos para aves",
+			"2 hoteles de insectos",
+		],
+		buttonText: "Conoce más detalles aquí",
+		color: "#ffa116",
 	},
 	{
 		id: 3,
-		title: "INVENTARIO FASE 3",
+		title: "Fase 3",
 		image: "/images/location/fase-3.png",
-		rating: "5.8",
-		duration: "02h 30m",
-		quality: "4k Quality",
-		genres: ["Action", "Comedy", "Crime"],
+		details: [
+			{
+				text: "Más de 50 especies entre árboles, arbustos",
+				icon: "/images/arbustos.svg",
+			},
+			{
+				text: "Más de 700 individuos arbóreos",
+				icon: "/images/arboles.svg",
+			},
+		],
+		modalDetails: [
+			"51 especies: 18 árboles, 12 arbolitos, 17 arbustos, 4 herbáceas.",
+			"705 individuos arbóreos: 233 árboles, 244 arbolitos, 228 arbustos.",
+			"702 herbáceas.",
+		],
+		buttonText: "Conoce más detalles aquí",
+		color: "#39c493",
 	},
 	{
 		id: 4,
-		title: "INVENTARIO FASE 4",
+		title: "Fase 4",
 		image: "/images/location/fase-4.png",
-		rating: "5.8",
-		duration: "02h 30m",
-		quality: "4k Quality",
-		genres: ["Action", "Comedy", "Crime"],
+		details: [
+			{
+				text: "2 Bebederos para aves",
+				icon: "/images/bebederos.svg",
+			},
+			{
+				text: "2 Hoteles de insectos",
+				icon: "/images/insectos.svg",
+			},
+			{
+				text: "Más de 35 especies y 390individuos arbóreos",
+				icon: "/images/arboles.svg",
+			},
+			{
+				text: "11 Especies herbáceas",
+				icon: "/images/hiervas.svg",
+			},
+		],
+		modalDetails: [
+			"2 bebederos para aves",
+			"2 hoteles de insectos",
+			"35 especies: 13 árboles, 11 arbolitos, 11 arbustos.",
+			"390 individuos arbóreos: 111 árboles, 164 arbolitos, 130 arbustos.",
+			"11 especies herbáceas terrestres, 1027 individuos.",
+			"3 especies herbáceas acuáticas, 132 individuos.",
+		],
+		buttonText: "Conoce más detalles aquí",
+		color: "#4f6d00",
 	},
 ];
 
@@ -90,11 +175,11 @@ const NewestReleases = () => {
 
 	return (
 		<>
-			<div className="design-area pt-80 bckg-53301B">
+			<div className="design-area pt-80 bckg-034234" id="section-6">
 				<div className="hl-container d-flex align-items-center justify-content-between mb--20">
 					<div className="position-relative container z-1">
 						<div className="d-block justify-content-start">
-							<h2 className="section-title large mb-20 lh-1 text-center">
+							<h2 className="section-title large mb-30 lh-1 text-center">
 								CONOCE LA PROPUESTA DE DISEÑO <br /> PAISAJÍSTICO DE VIVE CLARO
 							</h2>
 							<p className="responsive--description fw-medium mb-4 col-md-10 color-white text-center m-auto">
@@ -116,129 +201,47 @@ const NewestReleases = () => {
 							</p>
 						</div>
 					</div>
-					{/* <div className="slider-btn-wrapper d-flex align-items-center justify-content-center gap-3">
-            <button className="slider-btn slider-btn--sm newest-release-prev-slide"></button>
-            <button className="slider-btn next-slide slider-btn--sm newest-release-next-slide"></button>
-          </div> */}
 				</div>
 				<div className="pt-80">
 					<div className="hl-container">
 						<div className="row pb-80">
 							{movies.map((movie, index) => (
 								<div
-									className="movie-card-small position-relative style-three col-md-3"
+									className="col-md-3"
 									onClick={() => openModal(movie, index)}
 									style={{ cursor: "pointer" }}
 								>
-									<div className="thumb">
-										<Image
-											src={movie.image}
-											alt={movie.title}
-											width={1000}
-											height={300}
-										/>
+									<div className="thumb-title">{movie.title}</div>
+									<div className="card">
+										<ul>
+											{movie.details.map((detail, index) => (
+												<li key={index}>
+													<span>
+														{detail.icon && (
+															<img
+																src={detail.icon}
+																alt="icon"
+																width="20"
+																height="20"
+															/>
+														)}
+													</span>
+													{detail.text}
+												</li>
+											))}
+										</ul>
 									</div>
-
-									<div className="details details-two position-absolute">
-										<h4 className="movie-name text-uppercase">
-											<span className="gradient-link color-black">
-												{movie.title}
-											</span>
-										</h4>
-									</div>
-
-									{/* <div className="options">
-										{[
-											{ icon: "add-playlist", alt: "playlist" },
-											{ icon: "casting", alt: "casting" },
-											{ icon: "add-favourite", alt: "favourite" },
-											{ icon: "share", alt: "share" },
-										].map((option, index) => (
-											<button
-												key={index}
-												className={`option-btn options--${index + 1}`}
-												onClick={(e) => e.stopPropagation()}
-											>
-												<Image
-													src={`/images/icons/card/${option.icon}.svg`}
-													alt={option.alt}
-													width={24}
-													height={24}
-												/>
-											</button>
-										))}
-									</div> */}
+									<span
+										className="card-button"
+										style={{ backgroundColor: movie.color }}
+									>
+										{movie.buttonText}
+									</span>
 								</div>
 							))}
 						</div>
 					</div>
 				</div>
-
-				{/* <Swiper
-					modules={[Navigation]}
-					navigation={{
-						prevEl: ".newest-release-prev-slide",
-						nextEl: ".newest-release-next-slide",
-					}}
-					spaceBetween={20}
-					slidesPerView={4}
-					breakpoints={{
-						320: { slidesPerView: 1 },
-						576: { slidesPerView: 2 },
-						992: { slidesPerView: 3 },
-						1200: { slidesPerView: 4 },
-					}}
-					className="pt-60 pb-80"
-				>
-					{movies.map((movie, index) => (
-						<SwiperSlide key={movie.id}>
-							<div
-								className="movie-card-small position-relative style-three"
-								onClick={() => openModal(movie, index)}
-								style={{ cursor: "pointer" }}
-							>
-								<div className="thumb">
-									<Image
-										src={movie.image}
-										alt={movie.title}
-										width={1000}
-										height={300}
-									/>
-								</div>
-
-								<div className="details details-two position-absolute">
-									<h4 className="movie-name text-uppercase">
-										<span className="gradient-link color-black">
-											{movie.title}
-										</span>
-									</h4>
-								</div>
-
-								<div className="options">
-									{[
-										{ icon: "add-playlist", alt: "playlist" },
-										{ icon: "casting", alt: "casting" },
-										{ icon: "add-favourite", alt: "favourite" },
-										{ icon: "share", alt: "share" },
-									].map((option, index) => (
-										<button
-											key={index}
-											className={`option-btn options--${index + 1}`}
-											onClick={(e) => e.stopPropagation()}
-										>
-											<Image
-												src={`/images/icons/card/${option.icon}.svg`}
-												alt={option.alt}
-												width={24}
-												height={24}
-											/>
-										</button>
-									))}
-								</div>
-							</div>
-						</SwiperSlide>
-					))}
-				</Swiper> */}
 			</div>
 
 			{/* Modal */}
@@ -246,19 +249,15 @@ const NewestReleases = () => {
 				<div className="modal-content" onClick={(e) => e.stopPropagation()}>
 					{currentMovie && (
 						<>
-							<button className="modal-close" onClick={closeModal}>
+							<button
+								className="modal-close"
+								onClick={closeModal}
+								style={{ backgroundColor: currentMovie.color }}
+							>
 								×
 							</button>
 
 							<div className="modal-image-container">
-								<Image
-									src={currentMovie.image}
-									alt={currentMovie.title}
-									width={800}
-									height={450}
-									className="modal-image"
-								/>
-
 								{currentIndex > 0 && (
 									<button
 										className="modal-navigation modal-prev"
@@ -278,49 +277,24 @@ const NewestReleases = () => {
 								)}
 							</div>
 
-							<div className="modal-info">
-								<h3 className="modal-title">{currentMovie.title}</h3>
-
-								{/* <div className="modal-stats">
+							<div
+								className="modal-info"
+								style={{ backgroundColor: currentMovie.color }}
+							>
+								<h3 className="modal-title">
+									Inventario {currentMovie.title}
 									<span>
-										<Image
-											src="/images/icons/card/star-fill.svg"
-											alt="star"
-											width={16}
-											height={16}
-											className="mr-2"
-										/>
-										{currentMovie.rating}
+										<img src="/images/bebederos-green.svg" alt="icon" width="40" height="40" />
+										<img src="/images/insectos-green.svg" alt="icon" width="40" height="40" />
+										<img src="/images/arboles-green.svg" alt="icon" width="40" height="40" />
+										<img src="/images/hiervas-green.svg" alt="icon" width="40" height="40" />
 									</span>
-									<span>
-										<Image
-											src="/images/icons/card/clock-fill.svg"
-											alt="clock"
-											width={16}
-											height={16}
-											className="mr-2"
-										/>
-										{currentMovie.duration}
-									</span>
-									<span>
-										<Image
-											src="/images/icons/card/4k-fill.svg"
-											alt="4k"
-											width={16}
-											height={16}
-											className="mr-2"
-										/>
-										{currentMovie.quality}
-									</span>
-								</div> */}
-
-								{/* <div className="modal-genres">
-									{currentMovie.genres.map((genre, index) => (
-										<span key={index} className="genre-tag">
-											{genre}
-										</span>
+								</h3>
+								<ul>
+									{currentMovie.modalDetails.map((detail, index) => (
+										<li key={index}>{detail}</li>
 									))}
-								</div> */}
+								</ul>
 							</div>
 						</>
 					)}

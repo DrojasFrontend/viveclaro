@@ -129,7 +129,7 @@ const MovieCardSliderSm = () => {
 		}
 	};
 	return (
-		<div className="position-relative section-bckg -mt-100 mb-80 pt-80 pb-100 bckg-FFA131 z-1">
+		<div className="position-relative section-bckg -mt-100 mb-80 pt-80 pb-100 bckg-FFA131 z-1" id="section-1">
 			<div className="container mb-45">
 				<div className="d-sm-flex text-lg-start text-center align-items-center justify-content-sm-between">
 					<div className="d-inline-flex align-item-center section-header">

@@ -108,7 +108,7 @@ const Location = () => {
 		}
 	};
 	return (
-		<div className="location-area">
+		<div className="location-area" id="section-5">
 			<div className="col-md-6 m-auto">
 				<div className="center-title">
 					<div className="d-block justify-content-start mb-40">

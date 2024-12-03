@@ -95,7 +95,7 @@ const MovieCardSliderSm = () => {
 		}
 	};
 	return (
-		<div className="cultural-district pt-80 pb-100">
+		<div className="cultural-district pt-80 pb-100" id="section-2">
 			<div className="position-relative container mb-45 z-1">
 				<div className="d-block justify-content-start mb-40">
 					<h2 className="section-title large mb-20 lh-1">
