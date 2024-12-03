@@ -28,7 +28,7 @@ const amx = localFont({
 const ctas = [
 	{ id: 1, link: "Eventos" },
 	{ id: 2, link: "Distrito Cultural" },
-	{ id: 3, link: "No sé aún" },
+	{ id: 3, link: "Vive Claro" },
 	{ id: 4, link: "Clientes Claro " },
 	{ id: 5, link: "Ubicación" },
 	{ id: 6, link: "Diseño Paisajístico" },

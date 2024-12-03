@@ -10029,7 +10029,7 @@ body.rtl {
 .gallery {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	border: 1px solid #000;
+	/* border: 1px solid #000; */
 	margin-bottom: 0;
 	gap: 20px;
 }
@@ -10037,7 +10037,7 @@ body.rtl {
 .gallery .gallery-img {
 	padding: 10px;
 	text-align: center;
-	border-bottom: 1px solid #000;
+	/* border-bottom: 1px solid #000; */
 }
 
 .gallery-img img {
@@ -10451,4 +10451,10 @@ body.rtl {
 	margin: 20px auto 0;
 	padding: 5px 20px;
 	border-radius: 40px;
+}
+
+.promotor-area {
+	background-image: url(/images/fondo-promotor.png);
+	background-size: cover;
+	background-position: center;
 }
