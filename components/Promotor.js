@@ -15,7 +15,7 @@ const shows = [
 	},
 	{
 		id: 3,
-		imag3: "/images/promotor/2.svg",
+		image: "/images/promotor/2.svg",
 	},
 	{
 		id: 4,
