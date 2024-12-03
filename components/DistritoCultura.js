@@ -18,7 +18,7 @@ const shows = [
 	},
 	{
 		id: 2,
-		image: "/images/popular-show/festivales.jpg",
+		image: "/images/popular-show/festivales.png",
 		badge: "02",
 		title: "Festivales",
 		rating: "Octubre 10",
@@ -28,7 +28,7 @@ const shows = [
 	},
 	{
 		id: 3,
-		image: "/images/popular-show/arte.webp",
+		image: "/images/popular-show/Exposiciones-de-Arte.png",
 		badge: "03",
 		title: "Exposiciones de arte",
 		rating: "Noviembre 6",
@@ -38,7 +38,7 @@ const shows = [
 	},
 	{
 		id: 4,
-		image: "/images/popular-show/gastronomia.webp",
+		image: "/images/popular-show/Ferias-Culturales-y-Gastronómicas.png",
 		badge: "04",
 		title: "Ferias culturales & gastronómicas",
 		rating: "8.8",
@@ -48,7 +48,7 @@ const shows = [
 	},
 	{
 		id: 5,
-		image: "/images/popular-show/deportivos.jpg",
+		image: "/images/popular-show/Eventos-deportivos.png",
 		badge: "05",
 		title: "Eventos deportivos",
 		rating: "Mayo 16",
@@ -58,7 +58,7 @@ const shows = [
 	},
 	{
 		id: 6,
-		image: "/images/popular-show/teatro.webp",
+		image: "/images/popular-show/Teatro.png",
 		badge: "06",
 		title: "Teatro",
 		rating: "Octubre 10",
@@ -68,7 +68,7 @@ const shows = [
 	},
 	{
 		id: 7,
-		image: "/images/popular-show/musicales.webp",
+		image: "/images/popular-show/Musicales-B.png",
 		badge: "07",
 		title: "Musicales",
 		rating: "Noviembre 6",
