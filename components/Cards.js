@@ -257,7 +257,7 @@ const NewestReleases = () => {
 								×
 							</button>
 
-							<div className="modal-image-container">
+							{/* <div className="modal-image-container">
 								{currentIndex > 0 && (
 									<button
 										className="modal-navigation modal-prev"
@@ -275,7 +275,7 @@ const NewestReleases = () => {
 										&#8250;
 									</button>
 								)}
-							</div>
+							</div> */}
 
 							<div
 								className="modal-info"

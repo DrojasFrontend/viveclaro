@@ -32,8 +32,8 @@ const ctas = [
 	{ id: 4, link: "Clientes Claro " },
 	{ id: 5, link: "Ubicación" },
 	{ id: 6, link: "Diseño Paisajístico" },
-	{ id: 7, link: "Patrocinadores" },
-	{ id: 8, link: "Contáctanos" },
+	{ id: 7, link: "Contáctanos" },
+	{ id: 8, link: "Patrocinadores" },
 ];
 
 export default function Home() {
