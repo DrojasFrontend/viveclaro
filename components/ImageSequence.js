@@ -226,6 +226,7 @@ const ImageSequence = () => {
 				</div>
 				<canvas
 					ref={canvasRef}
+					className="visibleDesktop"
 					style={{
 						display: "block",
 						width: "100%",

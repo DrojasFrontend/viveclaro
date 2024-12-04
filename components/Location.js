@@ -119,48 +119,46 @@ const Location = () => {
 				</div>
 			</div>
 			<div className="section-bckg">
-				<div className="row">
-					<div className="col-xl-5 col-lg-5 d-flex flex-column justify-content-center">
-						<div className="section-headeng position-relative">
-							<Image
-								src="/images/logo-white.png"
-								alt="clock"
-								width={190}
-								height={80}
-							/>
-							<h2
-								className="section-title large mb-20 lh-1 color-white mt-30 color--a91141"
-								data-cs-stagger="0.07"
-							>
-								Ubicación
-							</h2>
-							<p className="section-description-2 mb-xl-4 mb-3 pb-2 fade-slide bottom color-white">
-								Nos encontramos en una ubicación estratégica en la zona de
-								Salitre de Bogota, 
-								<strong>
-									entre la Calle 53, Calle 26 y Cra 60.
-								</strong>
-							</p>
-							<div className="mb-30"></div>
-							<p className="section-description-2 mb-xl-4 mb-3 pb-2 fade-slide bottom color-white">
-								<strong>
-									¡Te esperamos!
-								</strong>
-							</p>
+				<div className="container">
+					<div className="row">
+						<div className="col-xl-5 col-lg-5 d-flex flex-column justify-content-center">
+							<div className="section-headeng position-relative">
+								<Image
+									src="/images/logo-white.png"
+									alt="clock"
+									width={190}
+									height={80}
+								/>
+								<h2
+									className="section-title large mb-20 lh-1 color-white mt-30 color--a91141"
+									data-cs-stagger="0.07"
+								>
+									Ubicación
+								</h2>
+								<p className="section-description-2 mb-xl-4 mb-3 pb-2 fade-slide bottom color-white">
+									Nos encontramos en una ubicación estratégica en la zona de
+									Salitre de Bogota,
+									<strong>entre la Calle 53, Calle 26 y Cra 60.</strong>
+								</p>
+								<div className="mb-30"></div>
+								<p className="section-description-2 mb-xl-4 mb-3 pb-2 fade-slide bottom color-white">
+									<strong>¡Te esperamos!</strong>
+								</p>
+							</div>
 						</div>
-					</div>
-					<div className="position-relative col-xl-7 col-lg-7 col-md-12 overflow-hidden border-radius-50">
-						<Image
-							src="/images/location/fase-1-new.png"
-							alt=""
-							width={805}
-							height={598}
-							style={{
-								objectFit: "contain",
-								objectPosition: "center",
-							}}
-							className="w-100 flow-hidden border-radius-50"
-						/>
+						<div className="position-relative col-xl-7 col-lg-7 col-md-12 overflow-hidden border-radius-50">
+							<Image
+								src="/images/location/fase-1-new.png"
+								alt=""
+								width={805}
+								height={598}
+								style={{
+									objectFit: "contain",
+									objectPosition: "center",
+								}}
+								className="w-100 flow-hidden border-radius-50"
+							/>
+						</div>
 					</div>
 				</div>
 			</div>

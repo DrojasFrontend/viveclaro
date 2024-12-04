@@ -4,6 +4,7 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import LoadingCounter from "../components/LoadingCounter";
 import ImageSequence from "../components/ImageSequence";
+import HeroVideo from "../components/HeroVideo";
 import MovieCardSliderSm from "../components/MovieCardSliderSm";
 import DistritoCultura from "../components/DistritoCultura";
 import Benefit from "../components/Benefit";
@@ -106,7 +107,7 @@ export default function Home() {
 								height={80}
 							/>
 						</div>
-						<div className="d-flex align-items-center gap-3">
+						<div className="d-flex align-items-center gap-3 pt-5">
 							{ctas.map((cta) => (
 								<Link
 									key={cta.id}
@@ -135,7 +136,12 @@ export default function Home() {
 			</header>
 			<div className={`${amx.variable}`}>
 				<main>
-					<ImageSequence />
+					<div className="visibleDesktop">
+						<ImageSequence />
+					</div>
+					<div className="visibleMobile">
+						<HeroVideo />
+					</div>
 					<MovieCardSliderSm />
 					<DistritoCultura />
 					<RotateMovieSlider />
@@ -147,8 +153,8 @@ export default function Home() {
 				</main>
 				<footer className="footer pt-30 pb-30">
 					<div className="container">
-						<div className="d-flex justify-content-between align-content-center">
-							<div>
+						<div className="d-lg-flex justify-content-between align-content-center">
+							<div class="col-lg-3 text-center mb-30 mb-lg-0">
 								<Image
 									src="/images/logotipo-viveclaro-distrito-red.png"
 									alt="logo"
@@ -156,7 +162,7 @@ export default function Home() {
 									height={186}
 								/>
 							</div>
-							<div className="col-md-4">
+							<div className="col-lg-3 mb-30 mb-lg-0">
 								<h5 className="">Suscríbete</h5>
 								<form>
 									<input
@@ -167,7 +173,7 @@ export default function Home() {
 									<button className="custom-button">Suscríbete</button>
 								</form>
 							</div>
-							<div className="d-flex align-items-center justify-content-center flex-column">
+							<div className="col-lg-3 d-flex align-items-center justify-content-center flex-column gap-4 gap-lg-0">
 								<Link
 									href="mailto:distritoverdecol@email.com"
 									className="d-flex gap-3"
@@ -231,7 +237,7 @@ export default function Home() {
 									{/* <Image src="/images/icons/social/whatsapp.svg" alt="whatsapp" width={30} height={30}/> */}
 								</div>
 							</div>
-							<div className="d-flex align-items-center justify-content-center">
+							<div className="col-lg-3 d-flex align-items-center justify-content-center mt-30 mt-lg-0">
 								<Link href="">
 									<span className="d-flex align-items-center gap-3">
 										<Image

@@ -218,7 +218,7 @@ const NewestReleases = () => {
 				</div>
 				<div className="pt-80">
 					<div className="hl-container">
-						<div className="row pb-80">
+						<div className="row pb-80 gap-4 gap-lg-0">
 							{movies.map((movie, index) => (
 								<div
 									className="col-md-3"
