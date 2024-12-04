@@ -10094,6 +10094,14 @@ body.rtl {
 	grid-column: 2 span;
 }
 
+.gallery .gallery-img:nth-child(9) img,
+.gallery .gallery-img:nth-child(10) img {
+	width: 50%;
+}
+
+.gallery .gallery-img:nth-child(11) img {
+	width: 40%;
+} 
 
 .gallery .gallery-img:nth-child(11),
 .gallery .gallery-img:nth-child(12),
@@ -10101,6 +10109,25 @@ body.rtl {
 	grid-column: 2 span;
 }
 
+.gallery .gallery-img:nth-child(12) img {
+	width: 25%;
+}
+
+.gallery .gallery-img:nth-child(13) img {
+	width: 40%;
+}
+
+.gallery .gallery-img:nth-child(14) img {
+	width: 60%;
+}
+
+.gallery .gallery-img:nth-child(15) img {
+	width: 60%;
+}
+
+.gallery .gallery-img:nth-child(16) img {
+	width: 70%;
+}
 
 
 .gallery-img img {

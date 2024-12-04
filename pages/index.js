@@ -44,32 +44,36 @@ const sectionColors = {
 
 export default function Home() {
 	const [headerColor, setHeaderColor] = useState("#510000");
-	const [currentSection, setCurrentSection] = useState(null);
+	const DEFAULT_COLOR = "#510000";
 
 	useEffect(() => {
 		const sections = document.querySelectorAll('div[id^="section-"]');
-		console.log("Secciones encontradas:", sections.length); // Para depuración
 
 		const options = {
-			threshold: 0.2, // Reducimos el threshold para mejor detección
+			threshold: 0.2,
 			rootMargin: "10px 0px -250px 0px",
 		};
 
 		const observer = new IntersectionObserver((entries) => {
+			let anyVisible = false;
+
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
+					anyVisible = true;
 					const sectionId = entry.target.id;
-					setCurrentSection(sectionId); // Para depuración
-					console.log("Sección visible:", sectionId); // Para depuración
 					if (sectionColors[sectionId]) {
 						setHeaderColor(sectionColors[sectionId]);
 					}
 				}
 			});
+
+			// Si ninguna sección es visible, volvemos al color por defecto
+			if (!anyVisible) {
+				setHeaderColor(DEFAULT_COLOR);
+			}
 		}, options);
 
 		sections.forEach((section) => {
-			console.log("ID de sección:", section.id); // Para depuración
 			observer.observe(section);
 		});
 

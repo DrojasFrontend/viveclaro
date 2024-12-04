@@ -47,7 +47,7 @@ const shows = [
 	},
 	{
 		id: 11,
-		image: "/images/promotor/9.svg",
+		image: "/images/promotor/8.svg",
 	},
 	{
 		id: 12,
@@ -55,19 +55,19 @@ const shows = [
 	},
 	{
 		id: 13,
-		image: "/images/promotor/11.svg",
+		image: "/images/promotor/9.svg",
 	},
 	{
 		id: 14,
-		image: "/images/promotor/8.svg",
+		image: "/images/promotor/12.svg",
 	},
 	{
 		id: 15,
-		image: "/images/promotor/13.svg",
+		image: "/images/promotor/11.svg",
 	},
 	{
 		id: 16,
-		image: "/images/promotor/12.svg",
+		image: "/images/promotor/13.svg",
 	},
 ];
 
