@@ -6192,9 +6192,6 @@ button.hl-btn:active span {
 .category-card:hover::before {
 	opacity: 1;
 }
-.category-card:hover .thumbnail .thumb-img {
-	transform: scale(1.1);
-}
 .category-card:hover .details .circle-btn {
 	/* background-image: linear-gradient(139deg, rgba(255, 255, 255, 0.18) 19.65%, rgba(255, 255, 255, 0.03) 50.98%), linear-gradient(92deg, #5a0dff 0%, #ff29b8 38.6%, #ff581c 97.73%); */
 	background: #510000;

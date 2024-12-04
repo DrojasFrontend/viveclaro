@@ -111,7 +111,7 @@ const CategoriesSlider = () => {
 										alt={category.title}
 										width={80}
 										height={80}
-										className="thumb-img w-100"
+										className=""
 									/>
 								</div>
 								<div className="details">
