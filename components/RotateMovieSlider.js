@@ -117,7 +117,7 @@ const RotateMovieSlider = () => {
 	};
 
 	return (
-		<div className="movie-slider rotate-movie-slider py-80 position-relative">
+		<div className="movie-slider rotate-movie-slider py-80 position-relative" id="section-3">
 			{/* <Image
 				src="/images/aro.png"
 				alt=""

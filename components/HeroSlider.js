@@ -84,7 +84,7 @@ const HeroSlider = () => {
 
 	return (
 		<>
-			<div className="video-area position-relative pt-100 bckg-cfd952 pb-80">
+			<div className="video-area position-relative pt-100 bckg-cfd952 pb-80" id="section-7">
 				<div className="section-bckg pt-80 pb-100">
 				<div className="container mb-45 position-relative">
 					<div className="d-flex flex-column align-items-center mb-40">

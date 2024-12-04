@@ -1,7 +1,7 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import localFont from "next/font/local";
-
 import LoadingCounter from "../components/LoadingCounter";
 import ImageSequence from "../components/ImageSequence";
 import MovieCardSliderSm from "../components/MovieCardSliderSm";
@@ -19,11 +19,6 @@ const amx = localFont({
 	variable: "--font-amx",
 	weight: "500",
 });
-// const geistMono = localFont({
-// 	src: "./fonts/GeistMonoVF.woff",
-// 	variable: "--font-geist-mono",
-// 	weight: "100 900",
-// });
 
 const ctas = [
 	{ id: 1, link: "Eventos" },
@@ -36,7 +31,53 @@ const ctas = [
 	{ id: 8, link: "Patrocinadores" },
 ];
 
+const sectionColors = {
+	"section-1": "#ffa131",
+	"section-2": "#000000",
+	"section-3": "#cfd952",
+	"section-4": "#000000",
+	"section-5": "#7a253e",
+	"section-6": "#034234",
+	"section-7": "#6f7429",
+	"section-8": "#02221b",
+};
+
 export default function Home() {
+	const [headerColor, setHeaderColor] = useState("#510000");
+	const [currentSection, setCurrentSection] = useState(null);
+
+	useEffect(() => {
+		const sections = document.querySelectorAll('div[id^="section-"]');
+		console.log("Secciones encontradas:", sections.length); // Para depuración
+
+		const options = {
+			threshold: 0.2, // Reducimos el threshold para mejor detección
+			rootMargin: "10px 0px -250px 0px",
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					const sectionId = entry.target.id;
+					setCurrentSection(sectionId); // Para depuración
+					console.log("Sección visible:", sectionId); // Para depuración
+					if (sectionColors[sectionId]) {
+						setHeaderColor(sectionColors[sectionId]);
+					}
+				}
+			});
+		}, options);
+
+		sections.forEach((section) => {
+			console.log("ID de sección:", section.id); // Para depuración
+			observer.observe(section);
+		});
+
+		return () => {
+			sections.forEach((section) => observer.unobserve(section));
+		};
+	}, []);
+
 	return (
 		<>
 			<Head>
@@ -48,7 +89,11 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<header
-				className={`visibleDesktop ${amx.variable} header-area bckg-5C0B0C pt-10 pb-10 visibleDesktop`}
+				className={`visibleDesktop ${amx.variable} header-area pt-10 pb-10 visibleDesktop`}
+				style={{
+					backgroundColor: headerColor,
+					transition: "background-color 0.3s ease",
+				}}
 			>
 				<div className="container">
 					<div className="d-flex justify-content-between align-items-center">
@@ -63,6 +108,7 @@ export default function Home() {
 						<div className="d-flex align-items-center gap-3">
 							{ctas.map((cta) => (
 								<Link
+									key={cta.id}
 									className="color-white"
 									href={`#section-${cta.id}`}
 									onClick={(e) => {
@@ -71,7 +117,7 @@ export default function Home() {
 											`section-${cta.id}`
 										);
 										if (element) {
-											const elementPosition = element.offsetTop - 100; // restamos 100px
+											const elementPosition = element.offsetTop - 100;
 											window.scrollTo({
 												top: elementPosition,
 												behavior: "smooth",
@@ -82,36 +128,12 @@ export default function Home() {
 									{cta.link}
 								</Link>
 							))}
-
-							{/* <div className="">
-								<Link
-									href="#"
-									className="custom-button custom-button-transparent"
-								>
-									CONTÁCTENOS
-								</Link>
-							</div> */}
 						</div>
 					</div>
 				</div>
 			</header>
-			{/* <div className="visibleMobile">
-				<div className="visibleMobile-logo">
-					<Image
-						src="/images/logotipo-viveclaro-red.webp"
-						alt="logo"
-						width={200}
-						height={56}
-					/>
-					<p>
-						Estamos trabajando para llevarte toda la magia de nuestro espacio
-						verde multipropósito a la palma de tu mano.
-					</p>
-				</div>
-			</div> */}
 			<div className={`${amx.variable}`}>
 				<main>
-					{/* <LoadingCounter /> */}
 					<ImageSequence />
 					<MovieCardSliderSm />
 					<DistritoCultura />

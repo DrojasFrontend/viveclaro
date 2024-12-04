@@ -35,7 +35,7 @@ const shows = [
 	},
 	{
 		id: 8,
-		image: "/images/promotor/6.svg",
+		image: "/images/promotor/5.svg",
 	},
 	{
 		id: 9,
@@ -118,42 +118,12 @@ const Promotor = () => {
 					</div>
 				</div>
 			</div>
-			<div className="promotor-area pt-80 bckg-000000" id="section-7">
-				{/* <div className="position-relative container mb-45 z-1">
-					<div className="row">
-						<div className="col-md-9">
-							<div className="d-block justify-content-start mb-40">
-								<h2 className="section-title large mb-20 lh-1 color-E32D26">
-									¿ERES PROMOTOR DE EVENTOS?
-								</h2>
-								<p className="responsive--description fw-medium mb-4 col-md-8 color-E32D26">
-									Si deseas organizar un evento en Vive Claro, ¡hablemos!
-								</p>
-							</div>
-						</div>
-						<div className="col-md-3">
-							<Link href="/" className="custom-button">
-								CONTACTAR
-							</Link>
-						</div>
-					</div>
-				</div> */}
+			<div className="promotor-area pt-80 bckg-000000" id="section-8">
 				<div className="container pb-80">
 					<div className="col-md-10 m-auto pt-100">
-						{/* <Image
-							src="/images/promotor/carpa.svg"
-							alt=""
-							width={1157}
-							height={180}
-							quality={75}
-							style={{
-								objectFit: "contain",
-							}}
-						/> */}
 						<div className="gallery">
 							{images.map((show, index) => (
 								<div key={`${show.id}-${index}`} className="gallery-img">
-									{/* <div className={`image-wrapper ${fade ? "fade" : ""}`}> */}
 									{show.image && (
 										<Image
 											src={show.image}
