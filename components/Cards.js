@@ -71,7 +71,7 @@ const movies = [
 		],
 		modalImages: ["/images/fase2/fase-1.jpg", "/images/fase2/fase-2.jpg"],
 		buttonText: "Conoce más detalles aquí",
-		color: "#ffa116",
+		color: "#d9e11c",
 	},
 	{
 		id: 3,
@@ -100,7 +100,7 @@ const movies = [
 			"/images/fase3/fase-5.jpg",
 		],
 		buttonText: "Conoce más detalles aquí",
-		color: "#39c493",
+		color: "#d9e11c",
 	},
 	{
 		id: 4,
@@ -138,7 +138,7 @@ const movies = [
 			"/images/fase4/fase-3.jpg",
 		],
 		buttonText: "Conoce más detalles aquí",
-		color: "#4f6d00",
+		color: "#d9e11c",
 	},
 ];
 

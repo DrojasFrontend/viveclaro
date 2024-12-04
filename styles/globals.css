@@ -1069,7 +1069,7 @@ object {
 	font-weight: 400;
 	line-height: 55px;
 	text-transform: uppercase;
-	font-size: 120px;
+	font-size: 70px;
 }
 .section-title--two {
 	font-family: var(--bigShoulder-font);
@@ -10081,7 +10081,7 @@ body.rtl {
 
 @media (min-width: 1024px) {
 	.track p {
-		font-size: 30px;
+		font-size: 24px;
 	}
 }
 
@@ -10530,7 +10530,7 @@ body.rtl {
 	left: 0;
 	width: 100%;
 	z-index: 10;
-	padding: 15px 0;
+	padding: 15px 20px;
 }
 
 .header-area a {

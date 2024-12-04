@@ -112,7 +112,7 @@ const Location = () => {
 			<div className="col-md-6 m-auto">
 				<div className="center-title">
 					<div className="d-block justify-content-start mb-40">
-						<h3 className="section-title small mb-20 lh-1 bckg-cfd952 color-black">
+						<h3 className="section-title small mb-20 lh-1 bckg-000000 color-white">
 							¡Aquí se encuentra vive claro!
 						</h3>
 					</div>

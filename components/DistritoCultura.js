@@ -102,9 +102,7 @@ const MovieCardSliderSm = () => {
 						Distrito cultural
 					</h2>
 					<p className="responsive--description fw-medium mb-4 col-md-8 color-white">
-						Disfruta en familia y con amigos de espacios únicos, tanto cubiertos
-						como al aire libre, en múltiples formatos, diseñados para que vivas
-						los eventos culturales y de entretenimiento más impactantes.
+					Disfruta en familia y con amigos de espacios únicos, tanto cubiertos como al aire libre, en múltiples formatos, diseñados para que vivas los eventos culturales y de entretenimiento más impactantes.
 					</p>
 				</div>
 			</div>

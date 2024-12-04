@@ -99,7 +99,7 @@ const Promotor = () => {
 
 	return (
 		<>
-			<div className="bckg-000000 pt-100 pb-50">
+			<div className="bckg-000000 pt-100 pb-50" id="section-8">
 				<div className="container">
 					<div className="row">
 						<div className="col-md-9">
@@ -111,14 +111,14 @@ const Promotor = () => {
 							</p>
 						</div>
 						<div className="col-md-3">
-							<Link href="#" className="custom-button">
+							<Link href="mailto:mbenavides@ocesa.co" className="custom-button" target="_blank">
 								CONTACTAR
 							</Link>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="promotor-area pt-80 bckg-000000" id="section-8">
+			<div className="promotor-area pt-80 bckg-000000" id="section-9">
 				<div className="container pb-80">
 					<div className="col-md-10 m-auto pt-100">
 						<div className="gallery">
