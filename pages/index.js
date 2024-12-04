@@ -76,6 +76,22 @@ export default function Home() {
 			observer.observe(section);
 		});
 
+		// Solo inicializar Hotjar en el lado del cliente
+		if (typeof window !== "undefined") {
+			import("@hotjar/browser")
+				.then((hotjarModule) => {
+					const Hotjar = hotjarModule.default;
+					try {
+						Hotjar.init(5231184, 6);
+					} catch (error) {
+						console.warn("Error initializing Hotjar:", error);
+					}
+				})
+				.catch((error) => {
+					console.warn("Error loading Hotjar module:", error);
+				});
+		}
+
 		return () => {
 			sections.forEach((section) => observer.unobserve(section));
 		};
@@ -91,17 +107,20 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 
-				<script async src="https://www.googletagmanager.com/gtag/js?id=G-FE4DTJ3LV5" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+				<script
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=G-FE4DTJ3LV5"
+				/>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-FE4DTJ3LV5');
             `,
-          }}
-        />
+					}}
+				/>
 			</Head>
 			<header
 				className={`visibleDesktop ${amx.variable} header-area pt-10 pb-10 visibleDesktop`}
@@ -187,7 +206,7 @@ export default function Home() {
 								</form>
 							</div> */}
 							<div className="col-lg-3 d-flex align-items-center justify-content-center flex-column gap-4 gap-lg-0">
-									<p>Síguenos en redes sociales</p>
+								<p>Síguenos en redes sociales</p>
 								<div className="social d-flex flex-row gap-2">
 									<Link
 										href="https://www.instagram.com/viveclaro_co/ "
@@ -211,7 +230,7 @@ export default function Home() {
 											height={30}
 										/>
 									</Link>
-									
+
 									<Link
 										href="https://www.youtube.com/@ViveClaro_Co"
 										target="_blank"
