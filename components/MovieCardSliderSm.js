@@ -144,6 +144,7 @@ const MovieCardSliderSm = () => {
 						alt="clock"
 						width={400}
 						height={167}
+						className="visibleDesktop"
 					/>
 				</div>
 			</div>
