@@ -197,7 +197,7 @@ const ImageSequence = () => {
 	}, []);
 
 	return (
-		<div className="track">
+		<div className="track" id="section-0">
 			<div className="brick-wrap">
 				<div className="container position-absolute top-40 start-50 translate-middle mt-5 z-2">
 					<div className="container mb-45">
