@@ -371,7 +371,7 @@ p {
 }
 
 .color-white {
-	color: #ffffff;
+	color: #ffffff !important;
 }
 
 .color-green {
