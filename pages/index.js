@@ -223,13 +223,26 @@ export default function Home() {
 											height={30}
 										/>
 									</Link>
+
+									<Link
+										href="https://www.facebook.com/Viveclaroco"
+										target="_blank"
+									>
+										<Image
+											src="/images/icons/social/facebook.svg"
+											alt="facebook"
+											width={30}
+											height={30}
+										/>
+									</Link>
+
 									<Link
 										href="https://www.tiktok.com/@viveclaro_co"
 										target="_blank"
 									>
 										<Image
 											src="/images/icons/social/tiktok.svg"
-											alt="facebook"
+											alt="tiktok"
 											width={30}
 											height={30}
 										/>
