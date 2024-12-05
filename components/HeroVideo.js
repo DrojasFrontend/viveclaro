@@ -95,8 +95,8 @@ const HeroVideo = () => {
             zIndex: 1
           }}
         >
-          <source src="/video/video-hero.mp4" type="video/mp4" />
-          <source src="/video/video-hero.webm" type="video/webm" /> {/* Opcional: formato alternativo */}
+          <source src="/video/video-hero-new.mp4" type="video/mp4" />
+          <source src="/video/video-hero-new.webm" type="video/webm" /> {/* Opcional: formato alternativo */}
           Tu navegador no soporta el elemento de video.
         </video>
 

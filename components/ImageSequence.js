@@ -6,237 +6,157 @@ import SplitType from "split-type";
 import Image from "next/image";
 
 const ImageSequence = () => {
-	const canvasRef = useRef(null);
+  const videoRef = useRef(null);
+  const textRef = useRef(null);
 
-	const textRef = useRef(null);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
 
-	useEffect(() => {
-		gsap.registerPlugin(ScrollTrigger);
+    // Función para forzar la reproducción con audio
+    const forcePlayWithAudio = async () => {
+      if (videoRef.current) {
+        try {
+          videoRef.current.muted = false;
+          videoRef.current.volume = 1;
+          await videoRef.current.play();
+        } catch (error) {
+          console.log("Error al intentar reproducir con audio:", error);
+          // Si falla, intentamos reproducir muteado
+          videoRef.current.muted = true;
+          videoRef.current.play().catch(e => console.log("Error reproduciendo muteado:", e));
+        }
+      }
+    };
 
-		const canvas = canvasRef.current;
-		if (!canvas) return;
+    if (videoRef.current) {
+      videoRef.current.load();
+      // Intentar reproducir con audio inmediatamente
+      forcePlayWithAudio();
+    }
 
-		const context = canvas.getContext("2d");
-		if (!context) return;
+    const textAnimation = gsap.to(".container", {
+      opacity: 0,
+      y: -50,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".track",
+        start: "top top",
+        end: "10% top",
+        scrub: true,
+      },
+    });
 
-		// Configuración inicial ajustada a 94 frames
-		canvas.width = 1600;
-		canvas.height = 1100;
+    const handleScroll = () => {
+      if (videoRef.current) {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 100) {
+          forcePlayWithAudio();
+        } else {
+          videoRef.current.pause();
+          videoRef.current.currentTime = 0;
+        }
+      }
+    };
 
-		const frameCount = 204; // 0-94 = 95 imágenes
-		const scrollableFrames = 50; // Ajustado para una transición más larga
-		const images = [];
-		let imagesLoaded = 0;
+    let scrollAnimation = gsap.to(
+      {},
+      {
+        scrollTrigger: {
+          scrub: 0.5,
+          trigger: ".track",
+          start: "top top",
+          end: "bottom bottom",
+          pin: ".brick-wrap",
+          markers: false,
+        },
+      }
+    );
 
-		const position = {
-			frame: 0,
-			mergingFrame: 0,
-		};
+    window.addEventListener("scroll", handleScroll);
 
-		let isLooping = false;
+    const splitChars = new SplitType(".split_chars", {
+      types: "chars",
+      absolute: false,
+    });
 
-		// Función de renderizado
-		const render = () => {
-			context.clearRect(0, 0, canvas.width, canvas.height);
-			const currentImage = images[position.frame];
-			if (
-				currentImage &&
-				currentImage.complete &&
-				currentImage.naturalHeight !== 0
-			) {
-				try {
-					context.drawImage(currentImage, 0, 0);
-				} catch (error) {
-					console.error("Error al dibujar imagen:", error);
-				}
-			}
-		};
+    const chars = splitChars.chars;
+    gsap.from(chars, {
+      duration: 1.3,
+      delay: 0.5,
+      autoAlpha: 0,
+      stagger: 0.15,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".split_chars",
+        start: "top 90%",
+        markers: false,
+      },
+    });
 
-		// Carga de imágenes
-		const loadImage = (index) => {
-			return new Promise((resolve, reject) => {
-				if (typeof window === "undefined") {
-					reject(new Error("Window is not defined"));
-					return;
-				}
+    // Intenta reproducir con audio cada vez que el documento obtenga el foco
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        forcePlayWithAudio();
+      }
+    };
 
-				const img = new window.Image();
+    document.addEventListener('visibilitychange', handleVisibilityChange);
 
-				img.onload = () => {
-					images[index] = img;
-					imagesLoaded++;
-					if (
-						imagesLoaded === 1 ||
-						imagesLoaded === frameCount ||
-						imagesLoaded % 10 === 0
-					) {
-						console.log(`Cargando imágenes: ${imagesLoaded}/${frameCount}`);
-					}
-					resolve(img);
-				};
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      if (scrollAnimation) scrollAnimation.kill();
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
 
-				img.onerror = (err) => {
-					console.error(`Error cargando imagen ${index}:`, err);
-					reject(err);
-				};
-
-				img.src = `/video/video_${index.toString().padStart(3, "0")}.webp`;
-				// img.src = `https://moonbase.nyc3.cdn.digitaloceanspaces.com/lvdv-brick-dev/webp/frame_${index.toString().padStart(3, '0')}.webp`;
-				// img.src = `/video/video_${index.toString().padStart(3, '0')}.webp`;
-			});
-		};
-
-		const positionTo = gsap.quickTo(position, "mergingFrame", {
-			onUpdate: () => {
-				position.frame = Math.round(position.mergingFrame);
-				render();
-			},
-			duration: 0.5,
-			onComplete: () => (isLooping = false),
-		});
-
-		let scrollAnimation;
-		let loop;
-
-		const initAnimations = () => {
-			scrollAnimation = gsap.to(position, {
-				frame: scrollableFrames - 1,
-				snap: "frame",
-				ease: "none",
-				onUpdate: () => {
-					if (isLooping) {
-						loop.paused() && positionTo(position.frame);
-					} else {
-						render();
-					}
-				},
-				scrollTrigger: {
-					scrub: 0.5,
-					trigger: ".track",
-					start: "top top",
-					end: "bottom bottom",
-					pin: ".brick-wrap",
-					markers: false,
-					onLeave: function () {
-						isLooping = true;
-						positionTo.tween.pause();
-						loop.play(0);
-					},
-					onEnterBack: function () {
-						loop.pause();
-						positionTo(position.frame);
-					},
-				},
-			});
-
-			loop = gsap.fromTo(
-				position,
-				{ frame: scrollableFrames },
-				{
-					frame: frameCount - 1,
-					duration: 10, // Ajustado para más frames
-					repeat: -1,
-					snap: "frame",
-					ease: "none",
-					onUpdate: () => {
-						position.mergingFrame = position.frame;
-						positionTo.tween.invalidate();
-						render();
-					},
-					paused: true,
-				}
-			);
-		};
-
-		// Carga inicial de imágenes
-		const loadAllImages = async () => {
-			try {
-				// console.log('Iniciando carga de imágenes...');
-				await Promise.all(
-					Array.from({ length: frameCount }, (_, i) => loadImage(i))
-				);
-				// console.log('✅ Todas las imágenes cargadas correctamente');
-				render();
-				initAnimations();
-			} catch (error) {
-				console.error("❌ Error cargando las imágenes:", error);
-			}
-		};
-
-		loadAllImages();
-
-		gsap.registerPlugin(ScrollTrigger);
-
-		// Texto dividido en caracteres
-		const splitChars = new SplitType(".split_chars", {
-			types: "chars",
-			absolute: false,
-		});
-
-		// Animación de caracteres
-		const chars = splitChars.chars;
-		gsap.from(chars, {
-			duration: 1.3,
-			delay: 0.5,
-			autoAlpha: 0,
-			stagger: 0.15,
-			ease: "power2.out",
-			scrollTrigger: {
-				trigger: ".split_chars",
-				start: "top 90%",
-				markers: false,
-			},
-		});
-
-		// Cleanup
-		return () => {
-			if (scrollAnimation) scrollAnimation.kill();
-			if (loop) loop.kill();
-			ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-		};
-	}, []);
-
-	return (
-		<div className="track" id="section-0">
-			<div className="brick-wrap">
-				<div className="container position-absolute top-40 start-50 translate-middle mt-5 z-2">
-					<div className="container mb-45">
-						<div className="d-block justify-content-center mb-40 text-center">
-							<Image
-								src="/images/logotipo-viveclaro-white.png"
-								alt="Vive Claro Logo"
-								width={256}
-								height={144}
-								priority
-							/>
-							<h2
-								className="section-title large mb-20 lh-1 "
-								ref={textRef}
-								data-cs-delay="0.8"
-								data-cs-stagger="0.07"
-							>
-								¡TE DAMOS LA BIENVENIDA!
-							</h2>
-							<p className="responsive--description fw-medium mb-4 color-white col-md-10 m-auto">
-								El primer y más versátil espacio multipropósito para la cultura
-								y el entretenimiento en Colombia.
-							</p>
-						</div>
-					</div>
-				</div>
-				<canvas
-					ref={canvasRef}
-					className="visibleDesktop"
-					style={{
-						display: "block",
-						width: "100%",
-						height: "100%",
-						objectFit: "cover",
-					}}
-				/>
-			</div>
-		</div>
-	);
+  return (
+    <div className="track" id="section-0">
+      <div className="brick-wrap">
+        <div className="container position-absolute top-40 start-50 translate-middle mt-5 z-2">
+          <div className="container mb-45">
+            <div className="d-block justify-content-center mb-40 text-center">
+              <Image
+                src="/images/logotipo-viveclaro-white.png"
+                alt="Vive Claro Logo"
+                width={256}
+                height={144}
+                priority
+              />
+              <h2
+                className="section-title large mb-20 lh-1"
+                ref={textRef}
+                data-cs-delay="0.8"
+                data-cs-stagger="0.07"
+              >
+                ¡TE DAMOS LA BIENVENIDA!
+              </h2>
+              <p className="responsive--description fw-medium mb-4 color-white col-md-10 m-auto">
+                El primer y más versátil espacio multipropósito para la cultura
+                y el entretenimiento en Colombia.
+              </p>
+            </div>
+          </div>
+        </div>
+        <video
+          ref={videoRef}
+          className="visibleDesktop"
+          style={{
+            display: "block",
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+          }}
+          playsInline
+          preload="auto"
+          autoPlay
+        >
+          <source src="/video/video-hero-new.mp4" type="video/mp4" />
+          Tu navegador no soporta el elemento de video.
+        </video>
+      </div>
+    </div>
+  );
 };
 
 export default ImageSequence;
