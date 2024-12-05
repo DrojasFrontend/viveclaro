@@ -53,7 +53,7 @@ const HeroVideo = () => {
   return (
     <div className="track track-video" id="section-0">
       <div className="brick-wrap">
-        <div className="container position-absolute top-40 start-50 translate-middle mt-5 z-2">
+        <div className="text-video container position-absolute top-40 start-50 translate-middle mt-5 z-2">
           <div className="container mb-45">
             <div className="d-block justify-content-center mb-40 text-center">
               <Image
