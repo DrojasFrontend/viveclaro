@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const MobileMenu = ({ ctas }) => {
+const MobileMenu = ({ ctas, headerColor }) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const toggleMenu = () => {
@@ -24,7 +24,13 @@ const MobileMenu = ({ ctas }) => {
 	};
 
 	return (
-		<div className="visibleMobile menu-mobile bckg-5C0B0C">
+		<div
+			className="visibleMobile menu-mobile bckg-5C0B0C"
+			style={{
+				backgroundColor: headerColor,
+				transition: "background-color 0.3s ease",
+			}}
+		>
 			<Image src="/images/logo-white.png" alt="logo" width={150} height={63} />
 			{/* Hamburger Button */}
 			<button
@@ -63,7 +69,13 @@ const MobileMenu = ({ ctas }) => {
 			</button>
 
 			{/* Mobile Menu Overlay */}
-			<div className={`menu-mobile-nav z-40 ${isOpen ? "show" : "hide"}`}>
+			<div
+				className={`menu-mobile-nav z-40 ${isOpen ? "show" : "hide"}`}
+				style={{
+					backgroundColor: headerColor,
+					transition: "background-color 0.3s ease",
+				}}
+			>
 				<div className="flex flex-col h-full">
 					{/* Logo Area */}
 					<div className="p-4 d-flex justify-content-between">

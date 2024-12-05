@@ -169,7 +169,7 @@ export default function Home() {
 			</header>
 			<div className={`${amx.variable}`}>
 				<main>
-				<MobileMenu ctas={ctas} />
+				<MobileMenu ctas={ctas} headerColor={headerColor} />
 
 					<div className="visibleDesktop">
 						<ImageSequence />
