@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -118,7 +119,7 @@ const Location = () => {
 					</div>
 				</div>
 			</div>
-			<div className="section-bckg">
+			<div className="section-bckg pb-50 pb-lg-100">
 				<div className="container">
 					<div className="row">
 						<div className="col-xl-5 col-lg-5 d-flex flex-column justify-content-center">
@@ -146,14 +147,14 @@ const Location = () => {
 								</p>
 							</div>
 						</div>
-						<div className="position-relative col-xl-7 col-lg-7 col-md-12 overflow-hidden border-radius-50">
+						<div className="position-relative col-xl-7 col-lg-7 col-md-12 overflow-hidden border-radius-50 pt-30 pt-lg-0">
 							<Image
 								src="/images/location/fase-1-new.png"
 								alt=""
 								width={805}
 								height={598}
 								style={{
-									objectFit: "contain",
+									height: "auto",
 									objectPosition: "center",
 								}}
 								className="w-100 flow-hidden border-radius-50"

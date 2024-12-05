@@ -192,6 +192,7 @@ export default function Home() {
 									alt="logo"
 									width={256}
 									height={186}
+									className="logo-footer"
 								/>
 							</div>
 							{/* <div className="col-lg-3 mb-30 mb-lg-0">
