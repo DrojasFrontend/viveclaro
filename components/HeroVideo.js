@@ -1,8 +1,55 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 const HeroVideo = () => {
+  const [showPlayButton, setShowPlayButton] = useState(false);
+
+  useEffect(() => {
+    const video = document.querySelector('video');
+    
+    if (video) {
+      // Intenta reproducir el video automáticamente
+      const playVideo = async () => {
+        try {
+          await video.play();
+        } catch (err) {
+          console.log("Autoplay prevented:", err);
+          setShowPlayButton(true);
+        }
+      };
+
+      // Configuraciones adicionales para iOS
+      video.playsInline = true;
+      video.muted = true;
+      video.setAttribute('playsinline', '');
+      video.setAttribute('muted', '');
+      video.setAttribute('autoplay', '');
+      
+      // Intenta reproducir
+      playVideo();
+
+      // Event listener para cuando el video se pausa
+      video.addEventListener('pause', () => {
+        setShowPlayButton(true);
+      });
+
+      return () => {
+        video.removeEventListener('pause', () => {
+          setShowPlayButton(true);
+        });
+      };
+    }
+  }, []);
+
+  const handlePlayClick = () => {
+    const video = document.querySelector('video');
+    if (video) {
+      video.play();
+      setShowPlayButton(false);
+    }
+  };
+
   return (
     <div className="track track-video" id="section-0">
       <div className="brick-wrap">
@@ -36,6 +83,7 @@ const HeroVideo = () => {
           muted
           loop
           playsInline
+          poster="/images/poster-hero.jpg" // Asegúrate de añadir una imagen de poster
           className="absolute inset-0 w-full h-full object-cover"
           style={{
             position: 'absolute',
@@ -48,8 +96,29 @@ const HeroVideo = () => {
           }}
         >
           <source src="/video/video-hero.mp4" type="video/mp4" />
+          <source src="/video/video-hero.webm" type="video/webm" /> {/* Opcional: formato alternativo */}
           Tu navegador no soporta el elemento de video.
         </video>
+
+        {/* Botón de reproducción que aparece si falla el autoplay */}
+        {showPlayButton && (
+          <button
+            onClick={handlePlayClick}
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-50 rounded-full p-4 cursor-pointer hover:bg-opacity-70 transition-all"
+            style={{
+              zIndex: 3
+            }}
+          >
+            <svg 
+              width="40" 
+              height="40" 
+              viewBox="0 0 24 24" 
+              fill="white"
+            >
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </button>
+        )}
       </div>
     </div>
   );
