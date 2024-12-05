@@ -14,6 +14,7 @@ import HeroSlider from "../components/HeroSlider";
 import Promotor from "../components/Promotor";
 import Link from "next/link";
 import RotateMovieSlider from "@/components/RotateMovieSlider";
+import MobileMenu from "@/components/MobileMenu";
 
 const amx = localFont({
 	src: "../public/fonts/AMX-Medium.woff",
@@ -168,6 +169,8 @@ export default function Home() {
 			</header>
 			<div className={`${amx.variable}`}>
 				<main>
+				<MobileMenu ctas={ctas} />
+
 					<div className="visibleDesktop">
 						<ImageSequence />
 					</div>
