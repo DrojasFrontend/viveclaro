@@ -56,7 +56,7 @@ const HeroVideo = () => {
         <div className="text-video container position-absolute top-40 start-50 translate-middle mt-5 z-2">
           <div className="container mb-45">
             <div className="d-block justify-content-center mb-40 text-center">
-              <Image
+              {/* <Image
                 src="/images/logotipo-viveclaro-white.png"
                 alt="Vive Claro Logo"
                 width={256}
@@ -73,7 +73,7 @@ const HeroVideo = () => {
               <p className="responsive--description fw-medium mb-4 color-white col-md-10 m-auto">
                 El primer y más versátil espacio multipropósito para la cultura
                 y el entretenimiento en Colombia.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -91,7 +91,7 @@ const HeroVideo = () => {
             left: 0,
             width: '100%',
             height: '100%',
-            objectFit: 'cover',
+            objectFit: 'contain',
             zIndex: 1
           }}
         >

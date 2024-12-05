@@ -171,12 +171,12 @@ export default function Home() {
 				<main>
 				<MobileMenu ctas={ctas} headerColor={headerColor} />
 
-					<div className="visibleDesktop">
+					<div className="">
 						<ImageSequence />
 					</div>
-					<div className="visibleMobile">
+					{/* <div className="visibleMobile">
 						<HeroVideo />
-					</div>
+					</div> */}
 					<MovieCardSliderSm />
 					<DistritoCultura />
 					<RotateMovieSlider />

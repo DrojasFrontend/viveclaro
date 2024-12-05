@@ -10715,3 +10715,41 @@ body.rtl {
 .menu-mobile-nav a {
 	font-size: 24px;
 }
+
+.button-play {
+	position: absolute;
+	top: initial;
+	bottom: 120px;
+	right: 20px;
+	z-index: 10;
+	
+	background: rgb(196 45 32);
+	border: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	color: white;
+}
+
+#section-0 {
+	background-image: url(/images/aro-rojo.png);
+	background-position: center;
+	background-size: cover;
+}
+@media (min-width: 1200px) {
+	.button-play {
+		top: 120px;
+		right: 50px;
+		width: 80px;
+		height: 80px;
+		background: rgb(81, 0, 0);
+	}
+
+	#section-0 {
+		background-image: none
+	}
+}
