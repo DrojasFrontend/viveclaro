@@ -80,6 +80,7 @@ const ImageSequence = () => {
           {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
         </button>
         <video
+        className="z-1"
           ref={videoRef}
           style={{
             position: 'absolute',
@@ -98,6 +99,28 @@ const ImageSequence = () => {
           <source src="/video/video-hero-new.mp4" type="video/mp4" />
           Tu navegador no soporta el elemento de video.
         </video>
+
+        <div className="visibleMobile">
+        <video
+          ref={videoRef}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain'
+          }}
+          autoPlay
+          loop
+          playsInline
+          preload="auto"
+          muted
+        >
+          <source src="/video/video-mobile.mp4" type="video/mp4" />
+          Tu navegador no soporta el elemento de video.
+        </video>
+        </div>
       </div>
     </div>
   );
