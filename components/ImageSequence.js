@@ -65,7 +65,7 @@ const ImageSequence = () => {
        </button>
        
        <video
-         className="z-1 hideOnMobile"
+         className="z-1 visibleDesktop"
          ref={videoRef}
          style={{
            position: 'absolute',
@@ -100,7 +100,7 @@ const ImageSequence = () => {
            playsInline
            preload="auto"
          >
-           <source src="/video/video-mobile.mp4" type="video/mp4" />
+           <source src="/video/video-mobile-new.mp4" type="video/mp4" />
            Tu navegador no soporta el elemento de video.
          </video>
        </div>
