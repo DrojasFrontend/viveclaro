@@ -116,7 +116,7 @@ const movies = [
 				icon: "/images/insectos.svg",
 			},
 			{
-				text: "Más de 35 especies y 390individuos arbóreos",
+				text: "Más de 35 especies y 390 individuos arbóreos",
 				icon: "/images/arboles.svg",
 			},
 			{
