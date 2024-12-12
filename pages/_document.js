@@ -13,9 +13,14 @@ export default function Document() {
 				<meta property="og:url" content="viveclaro.co" />
 				<meta property="og:title" content="Viveclaro" />
 				<meta property="og:description" content="Disfruta en familia y con amigos de espacios únicos, tanto cubiertos como al aire libre" />
-				<meta property="og:image" content="/public/images/logo-red.png" />
+				<meta property="og:image" content="https://www.viveclaro.co/images/logo-red.png" />
 				<meta property="og:locale" content="es_ES" />
 				<meta property="og:site_name" content="viveclaro" />
+				
+				<meta property="og:video" content="https://www.viveclaro.co/video/video-hero-new.mp4" />
+				<meta property="og:video:type" content="video/mp4" />
+				<meta property="og:video:width" content="320" />
+				<meta property="og:video:height" content="540" />
 			</Head>
 			<body>
 				<Main />

@@ -47,7 +47,7 @@ const movies = [
 		details: [
 			{
 				text: "Más de 40 especies de árboles y arbustos",
-				icon: "",
+				icon: "/images/arbustos.svg",
 			},
 			{
 				text: "Más 400 individuos arbóreos",
