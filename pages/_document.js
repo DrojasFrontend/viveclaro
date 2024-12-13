@@ -13,7 +13,7 @@ export default function Document() {
 				<meta property="og:url" content="viveclaro.co" />
 				<meta property="og:title" content="Viveclaro" />
 				<meta property="og:description" content="Disfruta en familia y con amigos de espacios únicos, tanto cubiertos como al aire libre" />
-				<meta property="og:image" content="https://www.viveclaro.co/images/logo-red.png" />
+				<meta property="og:image" content="https://www.viveclaro.co/images/logo-red-opengra.png" />
 				<meta property="og:locale" content="es_ES" />
 				<meta property="og:site_name" content="viveclaro" />
 				
