@@ -191,7 +191,7 @@ export default function Home() {
 						<div className="d-lg-flex justify-content-between align-content-center">
 							<div class="col-lg-3 text-center mb-30 mb-lg-0">
 								<Image
-									src="/images/logotipo-viveclaro-distrito-red.png"
+									src="/images/logotipo-viveclaro-distrito-red-footer.png"
 									alt="logo"
 									width={256}
 									height={186}
