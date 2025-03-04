@@ -4,62 +4,23 @@ import { Autoplay, EffectCoverflow } from "swiper/modules";
 import Image from "next/image";
 import Link from "next/link";
 
-import ImageCarousel  from "./ImageCarousel";
+import ImageCarousel from "./ImageCarousel";
 
 // Data Array
 const shows = [
 	{
 		id: 1,
-		image: "/images/popular-show/circo-del-sol.png",
+		image: "/images/popular-show/Promo_Jurassic-World.png",
 		badge: "01",
-		title: "CIRCO DEL SOL",
-		rating: "Mayo 16",
+		title: "JURASSIC WORLD",
+		rating: "ABRIL 11",
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
 		genres: ["Family", "Comedy", "Drama"],
+		link: "https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.eticket.co%2Fmasinformacion.aspx%3Fidevento%3D25683&data=05%7C02%7Crmedinas%40ocesa.co%7Cf06ad41dd232487a0f3408dd5abbbb5d%7C16977c54525a4cecbd2bc1c479aedbeb%7C0%7C0%7C638766484536592152%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=LCHjLGY%2FBkCXVQzx%2FffUJC4prrTouVs6fuj2kcblCN8%3D&reserved=0",
 	},
 	{
 		id: 2,
-		image: "/images/popular-show/cocacola-fest.png",
-		badge: "02",
-		title: "Coca-Cola Food Fest",
-		rating: "Septiembre 21",
-		duration: "6PM - 10PM",
-		quality: "8k Quality",
-		genres: ["Family", "Comedy", "Drama"],
-	},
-	{
-		id: 3,
-		image: "/images/popular-show/cervezas.png",
-		badge: "03",
-		title: "EXPOCERVEZAS",
-		rating: "Octubre 10",
-		duration: "6PM - 10PM",
-		quality: "8k Quality",
-		genres: ["Action", "Comedy", "Crime"],
-	},
-	{
-		id: 4,
-		image: "/images/popular-show/aurora.png",
-		badge: "04",
-		title: "AURORA",
-		rating: "Noviembre 6",
-		duration: "6PM - 10PM",
-		quality: "8k Quality",
-		genres: ["Family", "Comedy", "Drama"],
-	},
-	{
-		id: 5,
-		image: "/images/popular-show/paramo.png",
-		badge: "05",
-		title: "PÁRAMO CELEBRA",
-		rating: "8.8",
-		duration: "6PM - 10PM",
-		rating: "Noviembre 16",
-		genres: ["Action", "Comedy", "Crime"],
-	},
-	{
-		id: 6,
 		image: "/images/popular-show/circo-del-sol.png",
 		badge: "01",
 		title: "CIRCO DEL SOL",
@@ -67,9 +28,10 @@ const shows = [
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
 		genres: ["Family", "Comedy", "Drama"],
+		link: "#",
 	},
 	{
-		id: 7,
+		id: 3,
 		image: "/images/popular-show/cocacola-fest.png",
 		badge: "02",
 		title: "Coca-Cola Food Fest",
@@ -77,9 +39,10 @@ const shows = [
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
 		genres: ["Family", "Comedy", "Drama"],
+		link: "#",
 	},
 	{
-		id: 8,
+		id: 4,
 		image: "/images/popular-show/cervezas.png",
 		badge: "03",
 		title: "EXPOCERVEZAS",
@@ -87,9 +50,10 @@ const shows = [
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
 		genres: ["Action", "Comedy", "Crime"],
+		link: "#",
 	},
 	{
-		id: 9,
+		id: 5,
 		image: "/images/popular-show/aurora.png",
 		badge: "04",
 		title: "AURORA",
@@ -97,9 +61,10 @@ const shows = [
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
 		genres: ["Family", "Comedy", "Drama"],
+		link: "#",
 	},
 	{
-		id: 10,
+		id: 6,
 		image: "/images/popular-show/paramo.png",
 		badge: "05",
 		title: "PÁRAMO CELEBRA",
@@ -107,6 +72,73 @@ const shows = [
 		duration: "6PM - 10PM",
 		rating: "Noviembre 16",
 		genres: ["Action", "Comedy", "Crime"],
+		link: "#",
+	},
+	{
+		id: 7,
+		image: "/images/popular-show/Promo_Jurassic-World.png",
+		badge: "01",
+		title: "JURASSIC WORLD",
+		rating: "ABRIL 11",
+		duration: "6PM - 10PM",
+		quality: "8k Quality",
+		genres: ["Family", "Comedy", "Drama"],
+		link: "https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.eticket.co%2Fmasinformacion.aspx%3Fidevento%3D25683&data=05%7C02%7Crmedinas%40ocesa.co%7Cf06ad41dd232487a0f3408dd5abbbb5d%7C16977c54525a4cecbd2bc1c479aedbeb%7C0%7C0%7C638766484536592152%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=LCHjLGY%2FBkCXVQzx%2FffUJC4prrTouVs6fuj2kcblCN8%3D&reserved=0",
+	},
+	{
+		id: 8,
+		image: "/images/popular-show/circo-del-sol.png",
+		badge: "01",
+		title: "CIRCO DEL SOL",
+		rating: "Mayo 16",
+		duration: "6PM - 10PM",
+		quality: "8k Quality",
+		genres: ["Family", "Comedy", "Drama"],
+		link: "#",
+	},
+	{
+		id: 9,
+		image: "/images/popular-show/cocacola-fest.png",
+		badge: "02",
+		title: "Coca-Cola Food Fest",
+		rating: "Septiembre 21",
+		duration: "6PM - 10PM",
+		quality: "8k Quality",
+		genres: ["Family", "Comedy", "Drama"],
+		link: "#",
+	},
+	{
+		id: 10,
+		image: "/images/popular-show/cervezas.png",
+		badge: "03",
+		title: "EXPOCERVEZAS",
+		rating: "Octubre 10",
+		duration: "6PM - 10PM",
+		quality: "8k Quality",
+		genres: ["Action", "Comedy", "Crime"],
+		link: "#",
+	},
+	{
+		id: 11,
+		image: "/images/popular-show/aurora.png",
+		badge: "04",
+		title: "AURORA",
+		rating: "Noviembre 6",
+		duration: "6PM - 10PM",
+		quality: "8k Quality",
+		genres: ["Family", "Comedy", "Drama"],
+		link: "#",
+	},
+	{
+		id: 12,
+		image: "/images/popular-show/paramo.png",
+		badge: "05",
+		title: "PÁRAMO CELEBRA",
+		rating: "8.8",
+		duration: "6PM - 10PM",
+		rating: "Noviembre 16",
+		genres: ["Action", "Comedy", "Crime"],
+		link: "#",
 	},
 ];
 
@@ -129,7 +161,10 @@ const MovieCardSliderSm = () => {
 		}
 	};
 	return (
-		<div className="position-relative section-bckg -mt-100 mb-80 pt-80 pb-100 bckg-FFA131 z-2" id="section-1">
+		<div
+			className="position-relative section-bckg -mt-100 mb-80 pt-80 pb-100 bckg-FFA131 z-2"
+			id="section-1"
+		>
 			<div className="container mb-45">
 				<div className="d-sm-flex text-lg-start text-center align-items-center justify-content-sm-between">
 					<div className="d-inline-flex align-item-center section-header">
@@ -203,87 +238,41 @@ const MovieCardSliderSm = () => {
 			>
 				{shows.map((show) => (
 					<>
-						<SwiperSlide key={show.id}>
-							<div className="movie-card-small position-relative">
-								<Image
-									src={show.image}
-									alt={show.title}
-									width={377}
-									height={380}
-									style={{
-										objectFit: "cover",
-										objectPosition: "center",
-									}}
-									className="w-100"
-								/>
-								<div className="movie-badge position-absolute">
-									<span>{show.badge}</span>
+						<SwiperSlide key={show.link}>
+							<Link
+								href={show.link}
+								target="_blank"
+								className="text-decoration-none"
+							>
+								<div className="movie-card-small position-relative">
+									<Image
+										src={show.image}
+										alt={show.title}
+										width={377}
+										height={380}
+										style={{
+											objectFit: "cover",
+											objectPosition: "center",
+										}}
+										className="w-100"
+									/>
+									<div className="movie-badge position-absolute">
+										<span>{show.badge}</span>
+									</div>
+									<div className="details text-center details-overlay">
+										<h4 className="movie-name text-uppercase fw-normal">
+											<span className="gradient-link fw-normal color-black">
+												{show.title}
+											</span>
+										</h4>
+										<ul className="movie-info">
+											<li>
+												<span className="color-white">{show.rating}</span>
+											</li>
+										</ul>
+									</div>
 								</div>
-								{/* <a
-									href="/video/video.mp4"
-									className="video-play-btn popup_video position-absolute"
-								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="24"
-										height="29"
-										viewBox="0 0 24 29"
-										fill="none"
-									>
-										<path
-											d="M22.2584 12.8002C23.5199 13.5823 23.5199 15.4177 22.2584 16.1998L3.05388 28.1066C1.72154 28.9326 6.40836e-07 27.9744 7.0936e-07 26.4068L1.75028e-06 2.59321C1.81881e-06 1.02557 1.72154 0.0673544 3.05388 0.893405L22.2584 12.8002Z"
-											fill="currentColor"
-										/>
-									</svg>
-								</a> */}
-								<div className="details text-center details-overlay">
-									<h4 className="movie-name text-uppercase fw-normal">
-										<Link
-											href="/movie-details"
-											className="gradient-link fw-normal color-black"
-										>
-											{show.title}
-										</Link>
-									</h4>
-									<ul className="movie-info">
-										<li>
-											{/* <Image
-												src="/images/icons/card/star-stroke.svg"
-												alt="star"
-												width={16}
-												height={16}
-											/> */}
-											<span className="color-white">{show.rating}</span>
-										</li>
-										{/* <li>
-											<Image
-												src="/images/icons/card/clock-stroke.svg"
-												alt="clock"
-												width={16}
-												height={16}
-											/>
-											<span>{show.duration}</span>
-										</li> */}
-										{/* <li>
-										<Image
-											src="/images/icons/card/4k-stroke.svg"
-											alt="4k"
-											width={16}
-											height={16}
-										/>
-										<span>{show.quality}</span>
-									</li> */}
-									</ul>
-									{/* <ul className="movie-type">
-									{show.genres.map((genre, index) => (
-										<li key={index}>
-											{genre}
-											{index < show.genres.length - 1 ? "," : ""}
-										</li>
-									))}
-								</ul> */}
-								</div>
-							</div>
+							</Link>
 						</SwiperSlide>
 					</>
 				))}

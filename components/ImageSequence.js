@@ -77,7 +77,7 @@ const ImageSequence = () => {
             playsInline
             preload="auto"
           >
-            <source src="/video/video-hero-new.mp4" type="video/mp4" />
+            <source src="/video/video-hero-new-2025.mp4" type="video/mp4" />
           </video>
         )}
 
