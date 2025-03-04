@@ -97,7 +97,7 @@ const ImageSequence = () => {
             playsInline
             preload="auto"
           >
-            <source src="/video/video-mobile-new.mp4" type="video/mp4" />
+            <source src="/video/video-mobile-new-2025.mp4" type="video/mp4" />
           </video>
         )}
       </div>
