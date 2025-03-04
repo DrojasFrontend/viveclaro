@@ -10,7 +10,7 @@ import ImageCarousel from "./ImageCarousel";
 const shows = [
 	{
 		id: 1,
-		image: "/images/popular-show/Promo_Jurassic-World.png",
+		image: "/images/popular-show/Promo_Jurassic-World-2025.png",
 		badge: "01",
 		title: "JURASSIC WORLD",
 		rating: "ABRIL 11",
@@ -76,7 +76,7 @@ const shows = [
 	},
 	{
 		id: 7,
-		image: "/images/popular-show/Promo_Jurassic-World.png",
+		image: "/images/popular-show/Promo_Jurassic-World-2025.png",
 		badge: "01",
 		title: "JURASSIC WORLD",
 		rating: "ABRIL 11",
