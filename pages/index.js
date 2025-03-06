@@ -225,7 +225,7 @@ export default function Home() {
 									</Link>
 
 									<Link
-										href="https://www.facebook.com/Viveclaroco"
+										href="https://www.facebook.com/ViveClaro"
 										target="_blank"
 									>
 										<Image
@@ -274,8 +274,7 @@ export default function Home() {
 										/>
 										<div>
 											<p>
-												Calle 53 #66-19, <br />
-												Bogotá D.C, Colombia.
+											Av. La Esmeralda #42 - 41, <br /> Bogotá, Colombia. 
 											</p>
 										</div>
 									</span>
