@@ -9,6 +9,17 @@ import ImageCarousel from "./ImageCarousel";
 // Data Array
 const shows = [
 	{
+		id: 0,
+		image: "/images/popular-show/Feed_LinkinPark_Vive-Claro_1.png",
+		badge: "01",
+		title: "LINKIN PARK",
+		rating: "OCTUBRE 25, 2025",
+		duration: "6PM - 10PM",
+		quality: "8k Quality",
+		genres: ["Family", "Comedy", "Drama"],
+		link: "https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.eticket.co%2Fmasinformacion.aspx%3Fidevento%3D25683&data=05%7C02%7Crmedinas%40ocesa.co%7Cf06ad41dd232487a0f3408dd5abbbb5d%7C16977c54525a4cecbd2bc1c479aedbeb%7C0%7C0%7C638766484536592152%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=LCHjLGY%2FBkCXVQzx%2FffUJC4prrTouVs6fuj2kcblCN8%3D&reserved=0",
+	},
+	{
 		id: 1,
 		image: "/images/popular-show/Promo_Jurassic-World-2025.png",
 		badge: "01",
@@ -76,6 +87,17 @@ const shows = [
 	},
 	{
 		id: 7,
+		image: "/images/popular-show/Feed_LinkinPark_Vive-Claro_1.png",
+		badge: "01",
+		title: "LINKIN PARK",
+		rating: "OCTUBRE 25, 2025",
+		duration: "6PM - 10PM",
+		quality: "8k Quality",
+		genres: ["Family", "Comedy", "Drama"],
+		link: "https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.eticket.co%2Fmasinformacion.aspx%3Fidevento%3D25683&data=05%7C02%7Crmedinas%40ocesa.co%7Cf06ad41dd232487a0f3408dd5abbbb5d%7C16977c54525a4cecbd2bc1c479aedbeb%7C0%7C0%7C638766484536592152%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=LCHjLGY%2FBkCXVQzx%2FffUJC4prrTouVs6fuj2kcblCN8%3D&reserved=0",
+	},
+	{
+		id: 8,
 		image: "/images/popular-show/Promo_Jurassic-World-2025.png",
 		badge: "01",
 		title: "JURASSIC WORLD",
@@ -86,7 +108,7 @@ const shows = [
 		link: "https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.eticket.co%2Fmasinformacion.aspx%3Fidevento%3D25683&data=05%7C02%7Crmedinas%40ocesa.co%7Cf06ad41dd232487a0f3408dd5abbbb5d%7C16977c54525a4cecbd2bc1c479aedbeb%7C0%7C0%7C638766484536592152%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=LCHjLGY%2FBkCXVQzx%2FffUJC4prrTouVs6fuj2kcblCN8%3D&reserved=0",
 	},
 	{
-		id: 8,
+		id: 9,
 		image: "/images/popular-show/circo-del-sol.png",
 		badge: "01",
 		title: "CIRCO DEL SOL",
@@ -97,7 +119,7 @@ const shows = [
 		link: "#",
 	},
 	{
-		id: 9,
+		id: 10,
 		image: "/images/popular-show/cocacola-fest.png",
 		badge: "02",
 		title: "Coca-Cola Food Fest",
@@ -108,7 +130,7 @@ const shows = [
 		link: "#",
 	},
 	{
-		id: 10,
+		id: 11,
 		image: "/images/popular-show/cervezas.png",
 		badge: "03",
 		title: "EXPOCERVEZAS",
@@ -119,7 +141,7 @@ const shows = [
 		link: "#",
 	},
 	{
-		id: 11,
+		id: 12,
 		image: "/images/popular-show/aurora.png",
 		badge: "04",
 		title: "AURORA",
@@ -130,7 +152,7 @@ const shows = [
 		link: "#",
 	},
 	{
-		id: 12,
+		id: 13,
 		image: "/images/popular-show/paramo.png",
 		badge: "05",
 		title: "PÁRAMO CELEBRA",
@@ -249,7 +271,7 @@ const MovieCardSliderSm = () => {
 										src={show.image}
 										alt={show.title}
 										width={377}
-										height={380}
+										height={480}
 										style={{
 											objectFit: "cover",
 											objectPosition: "center",
