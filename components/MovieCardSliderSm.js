@@ -10,7 +10,7 @@ import ImageCarousel from "./ImageCarousel";
 const shows = [
 	{
 		id: 0,
-		image: "/images/popular-show/Feed_LinkinPark_Vive-Claro_1.png",
+		image: "/images/popular-show/Linkin-Park_Banner-Web_con-logos_Vertical.jpg",
 		badge: "01",
 		title: "LINKIN PARK",
 		rating: "OCTUBRE 25, 2025",
@@ -87,7 +87,7 @@ const shows = [
 	},
 	{
 		id: 7,
-		image: "/images/popular-show/Feed_LinkinPark_Vive-Claro_1.png",
+		image: "/images/popular-show/Linkin-Park_Banner-Web_con-logos_Vertical.jpg",
 		badge: "01",
 		title: "LINKIN PARK",
 		rating: "OCTUBRE 25, 2025",
