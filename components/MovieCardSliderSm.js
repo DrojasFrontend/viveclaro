@@ -17,7 +17,7 @@ const shows = [
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
 		genres: ["Family", "Comedy", "Drama"],
-		link: "https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.eticket.co%2Fmasinformacion.aspx%3Fidevento%3D25683&data=05%7C02%7Crmedinas%40ocesa.co%7Cf06ad41dd232487a0f3408dd5abbbb5d%7C16977c54525a4cecbd2bc1c479aedbeb%7C0%7C0%7C638766484536592152%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=LCHjLGY%2FBkCXVQzx%2FffUJC4prrTouVs6fuj2kcblCN8%3D&reserved=0",
+		link: "#",
 	},
 	{
 		id: 1,
@@ -94,7 +94,7 @@ const shows = [
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
 		genres: ["Family", "Comedy", "Drama"],
-		link: "https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.eticket.co%2Fmasinformacion.aspx%3Fidevento%3D25683&data=05%7C02%7Crmedinas%40ocesa.co%7Cf06ad41dd232487a0f3408dd5abbbb5d%7C16977c54525a4cecbd2bc1c479aedbeb%7C0%7C0%7C638766484536592152%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=LCHjLGY%2FBkCXVQzx%2FffUJC4prrTouVs6fuj2kcblCN8%3D&reserved=0",
+		link: "#",
 	},
 	{
 		id: 8,
