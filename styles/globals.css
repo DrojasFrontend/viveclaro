@@ -10390,6 +10390,10 @@ body.rtl {
 	top: 40%;
 }
 
+.right-0 {
+	right: 0;
+}
+
 .cultural-district .linear-circle {
 	stroke: #c1ed0b;
 }
@@ -10758,4 +10762,22 @@ body.rtl {
 	#section-0 {
 		background-image: none
 	}
+}
+
+.button-slider {
+	position: absolute;
+	top: 50%;
+	border: none;
+	width: 50px;
+	height: 50px;
+	border: 0;
+	z-index: 10;
+}
+
+.button-slider-prev {
+	left: 0;
+}
+
+.button-slider-next {
+	right: 0;
 }
