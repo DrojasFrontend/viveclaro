@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCoverflow } from "swiper/modules";
 import Image from "next/image";
 import { Volume2, VolumeX, ChevronLeft, ChevronRight } from "lucide-react";
-import LinkinPark from "/public/images/Linkin-Park_Banner-Web_con-logos.jpg";
+import LinkinPark from "/public/images/1980x700_Linkin-Park_Banner-Web_con-logos.jpg";
 import LinkinParkMobile from "/public/images/Linkin-Park_Banner-Web_con-logos_Vertical.jpg";
 
 const ImageSequence = () => {
