@@ -21,7 +21,7 @@ const shows = [
 	},
 	{
 		id: 1,
-		image: "/images/popular-show/nueva-imagen.png",
+		image: "/images/popular-show/Pieza-jw.png",
 		badge: "01",
 		title: "JURASSIC WORLD",
 		rating: "A partir del 11 de abril",
@@ -98,7 +98,7 @@ const shows = [
 	},
 	{
 		id: 8,
-		image: "/images/popular-show/nueva-imagen.png",
+		image: "/images/popular-show/Pieza-jw.png",
 		badge: "01",
 		title: "JURASSIC WORLD",
 		rating: "A partir del 11 de abril",
@@ -245,12 +245,20 @@ const MovieCardSliderSm = () => {
 						spaceBetween: 10,
 					},
 					992: {
-						slidesPerView: 2.5,
+						slidesPerView: 3.5,
 						spaceBetween: 10,
 					},
-					1366: {
-						slidesPerView: 3.5,
+					1280: {
+						slidesPerView: 3,
 						spaceBetween: 30,
+					},
+					1366: {
+						slidesPerView: 3.3,
+						spaceBetween: 30,
+					},
+					1440: {
+						slidesPerView: 3.5,
+						spaceBetween: 10,
 					},
 					1600: {
 						slidesPerView: 3.9,
@@ -271,7 +279,7 @@ const MovieCardSliderSm = () => {
 										src={show.image}
 										alt={show.title}
 										width={377}
-										height={480}
+										height={450}
 										style={{
 											objectFit: "cover",
 											objectPosition: "center",
