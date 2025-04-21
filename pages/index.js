@@ -189,7 +189,7 @@ export default function Home() {
 				<footer className="footer pt-30 pb-30">
 					<div className="container">
 						<div className="d-lg-flex justify-content-between align-content-center">
-							<div class="col-lg-3 text-center mb-30 mb-lg-0">
+							<div className="col-lg-3 text-center mb-30 mb-lg-0">
 								<Image
 									src="/images/logotipo-viveclaro-distrito-red-footer.png"
 									alt="logo"
