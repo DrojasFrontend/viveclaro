@@ -38,7 +38,7 @@ const movies = [
 		],
 		modalImages: ["/images/fase1/fase-1.jpg", "/images/fase1/fase-2.jpg"],
 		buttonText: "Conoce más detalles aquí",
-		color: "#d9e11c",
+		color: "#cfd952",
 	},
 	{
 		id: 2,
@@ -71,7 +71,7 @@ const movies = [
 		],
 		modalImages: ["/images/fase2/fase-1.jpg", "/images/fase2/fase-2.jpg"],
 		buttonText: "Conoce más detalles aquí",
-		color: "#d9e11c",
+		color: "#cfd952",
 	},
 	{
 		id: 3,
@@ -100,7 +100,7 @@ const movies = [
 			"/images/fase3/fase-5.jpg",
 		],
 		buttonText: "Conoce más detalles aquí",
-		color: "#d9e11c",
+		color: "#cfd952",
 	},
 	{
 		id: 4,
@@ -138,7 +138,7 @@ const movies = [
 			"/images/fase4/fase-3.jpg",
 		],
 		buttonText: "Conoce más detalles aquí",
-		color: "#d9e11c",
+		color: "#cfd952",
 	},
 ];
 
@@ -189,7 +189,7 @@ const NewestReleases = () => {
 
 	return (
 		<>
-			<div className="design-area pt-80 bckg-034234" id="section-6">
+			<div className="design-area pt-80 bckg-004437" id="section-6">
 				<div className="hl-container d-flex align-items-center justify-content-between mb--20">
 					<div className="position-relative container z-1">
 						<div className="d-block justify-content-start">

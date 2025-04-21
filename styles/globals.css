@@ -391,7 +391,7 @@ p {
 }
 
 .color-E32D26 {
-	color: #e32d26;
+	color: #c42e20;
 }
 
 .color--a91141 {
@@ -9870,8 +9870,8 @@ body.rtl {
 	background: #000000;
 }
 
-.bckg-034234 {
-	background: #034234;
+.bckg-004437 {
+	background: #004437;
 }
 
 .bckg-5C0B0C {
@@ -9883,7 +9883,7 @@ body.rtl {
 }
 
 .bckg-E32D26 {
-	background-color: #e32d26;
+	background-color: #c42e20;
 }
 @media only screen and (max-width: 575px) {
 	.section-bckg {
@@ -10352,11 +10352,11 @@ body.rtl {
 }
 
 .footer .custom-button {
-	background-color: #e32d26;
+	background-color: #c42e20;
 }
 
 .footer {
-	background-color: #5c0b0c;
+	background-color: #510000;
 }
 
 .footer a img {
@@ -10366,7 +10366,7 @@ body.rtl {
 .footer p,
 .footer h5 {
 	font-size: 16px;
-	color: #e32d26;
+	color: #c42e20;
 }
 
 .footer input[type="email"] {
@@ -10376,13 +10376,13 @@ body.rtl {
 	margin-bottom: 40px;
 	color: #fff;
 	border: 0;
-	border-bottom: 1px solid #e32d26;
+	border-bottom: 1px solid #c42e20;
 	background-color: transparent;
 }
 
 .footer input[type="email"]::placeholder {
 	font-family: var(--font-amx);
-	color: #e32d26;
+	color: #c42e20;
 	font-weight: 100;
 }
 
@@ -10448,7 +10448,7 @@ body.rtl {
 	justify-content: center;
 	background: rgba(0, 0, 0, 0.5);
 	border-radius: 50%;
-	color: #1d5129;
+	color: #004437;
 }
 
 .modal-close:hover {
@@ -10500,7 +10500,7 @@ body.rtl {
 
 .modal-info {
 	font-family: var(--heading-font);
-	color: #1d5129;
+	color: #004437;
 	padding: 30px;
 	border-radius: 20px;
 }
@@ -10508,7 +10508,7 @@ body.rtl {
 .modal-title {
 	display: flex;
 	justify-content: space-between;
-	color: #1d5129;
+	color: #004437;
 	font-size: 1.75rem;
 	font-weight: bold;
 	margin-bottom: 1rem;
@@ -10656,7 +10656,7 @@ body.rtl {
 	font-family: var(--heading-font);
 	display: block;
 	max-width: fit-content;
-	color: #1d5129;
+	color: #004437;
 	margin: 20px auto 0;
 	padding: 5px 20px;
 	border-radius: 40px;

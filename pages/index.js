@@ -41,7 +41,7 @@ const sectionColors = {
 	"section-3": "#cfd952",
 	"section-4": "#000000",
 	"section-5": "#7a253e",
-	"section-6": "#034234",
+	"section-6": "#004437",
 	"section-7": "#6f7429",
 	"section-8": "#000000",
 };

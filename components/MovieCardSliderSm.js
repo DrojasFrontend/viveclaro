@@ -24,7 +24,7 @@ const shows = [
 		image: "/images/popular-show/nueva-imagen.png",
 		badge: "01",
 		title: "JURASSIC WORLD",
-		rating: "Mayo 4 11, 2025",
+		rating: "Mayo 4, 2025",
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
 		genres: ["Family", "Comedy", "Drama"],
