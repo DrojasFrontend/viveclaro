@@ -17,7 +17,7 @@ const shows = [
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
 		genres: ["Family", "Comedy", "Drama"],
-		link: "https://www.ticketmaster.co/event/linkin-park",
+		link: "https://www.eticket.co/eventos.aspx?idartista=840",
 	},
 	{
 		id: 1,
@@ -28,7 +28,7 @@ const shows = [
 		duration: "6PM - 10PM",
 		quality: "8k Quality",
 		genres: ["Family", "Comedy", "Drama"],
-		link: "https://www.instagram.com/p/DFG5TaVR4n_/",
+		link: "https://www.eticket.co/eventos.aspx?idartista=840",
 	},
 	{
 		id: 2,
